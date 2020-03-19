@@ -1,41 +1,3 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Hola Alumnos</title>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script > //Este script corresponde al archivo externo de Jquery.
-        $(function() {
-            $("body").hide().fadeIn(5000);
-        });
-    </script>
-    <script>
-        alert ("Hola Mundo"); // Función predefinida
-    </script>
-    <script>
-        let nombre = "Juan";
-        alert (nombre);
-
-        let edad;
-        edad = 32;
-
-        let record = 3000;
-
-        alert (edad);
-
-        let contrato = "mensual",sueldo = 3000,vacaciones = "enero";
-        alert (sueldo);
-    </script>
-</head>
-
-<body>
-    <h1>Hola mundo</h1>
-    <p>Bienvenidos al curso de JavaScript de <span>Píldoras Informáticas</span></p>
-    <img src="images/arbol.jpg" width="35%">
-</body>
-
-</html>
-
 <!-- SENTENCIA
 Las sentencias se consideran unidades básicas de programación y terminan todas en punto y coma (;) En principio el no colocar los (;) no dará error pero se recomienda colocarlas como buena práctica. Al tener un proyecto con cientos de líneas de códigos y al no colocar los (;) a simple vista no sabes donde termina y donde comienza otra. Entonces a la hora de corregir un fallo entre esas cientos de líneas se hace más difícil saber de donde radica el error.
 Ejemplos de sentencias serían: alert("Hola Mundo"); document.write("Hola mundo");
@@ -73,3 +35,19 @@ Si se van a declarar varias variables en la misma línea:
 var puntuacion,record,jugador;
 Otra forma seria declararlas e iniciarlas:
 var puntuacion=0,record=5000,jugador="Juan";-->
+
+
+alert ("Hola Mundo"); // Función predefinida
+
+let nombre = "Juan";
+alert (nombre);
+
+let edad;
+edad = 32;
+
+let record = 3000;
+
+alert (edad);
+
+let contrato = "mensual",sueldo = 3000,vacaciones = "enero";
+alert (sueldo);

@@ -5,60 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Usando Arrays</title>
-  <link rel="stylesheet" href="css/micss3.css">
-  <script>
-      var articulos = ["Zapatillas", "Camisetas", "Pantalon", "Calcetines"];
-  </script>
 </head>
 
 <body>
 <div class="contenedor">
   <div class="header">
-    <p class="logo">JavaScript Arrays <i class="mm"></i>íldoras Informáticas</p>
+    <p class="logo">JavaScript Arrays <i class="mm"></i>Píldoras Informáticas</p>
   </div>
   <div class="contenido">
     <div class="principal">
       <h1>Manejando Arrays</h1>
-      <script>
-        document.write ("<p> El primer articulo es <strong>" + articulos [0] + "</strong></p>");
-        //document.write (articulos[0] + "</strong></p>");
 
-        document.write ("<p> El ultimo elemento es <strong>");
-        document.write (articulos[articulos.length-1] + "</strong></p>");
-
-        articulos.unshift ("Balón"); //AGREGA ELEMENTO AL PRINCIPIO
-        document.write ("<p>Casi nos olvidamos!!! Agregamos este articulo: <strong>");
-        document.write (articulos[0] + "</strong></p>");
-
-        document.write ("<p>Agreguemos un elemento más al final: <strong>");
-        articulos.push (prompt ("Introduce el articulo")); //AGREGA ELEMENTO AL FINAL
-        document.write (articulos[articulos.length-1] + "</strong></p>");
-
-        document.write ("<p>" + articulos[0] + "<br/>");
-        document.write (articulos[1] + "<br/>");
-        document.write (articulos[2] + "<br/>");
-        document.write (articulos[3] + "<br/>");
-        document.write (articulos[4] + "<br/>");
-        document.write (articulos[5] + "<br/></p>");
-
-        alert ("Borraremos el primer elemento");
-        articulos.shift (); //El método shift borra el primer elemento
-        document.write ("<p>" + articulos[0] + "<br/>");
-        document.write (articulos[1] + "<br/>");
-        document.write (articulos[2] + "<br/>");
-        document.write (articulos[3] + "<br/>");
-        document.write (articulos[4] + "<br/></p>");
-
-        alert ("Ahora borraremos el ultimo elemento");
-        articulos.pop (); //El método pop borra el último elemento
-        document.write ("<p>" + articulos[0] + "<br/>");
-        document.write (articulos[1] + "<br/>");
-        document.write (articulos[2] + "<br/>");
-        document.write (articulos[3] + "<br/></p>");
-      </script>
     </div>
   </div>
 </div>
+
+<script src="script01.js"></script>
 </body>
 <!-- Si recurrimos a los arrays a la hora de construirlos lo que estamos haciendo no es reservar un único espacio en la
 memoria, sino un montón de espacios donde iremos almacenando valores y en javascript no tienen porque ser del mismo
