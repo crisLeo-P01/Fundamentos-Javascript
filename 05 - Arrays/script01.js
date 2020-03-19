@@ -20,7 +20,7 @@ document.write (articulos[3] + "<br/>");
 document.write (articulos[4] + "<br/>");
 document.write (articulos[5] + "<br/></p>");
 
-alert ("Borraremos el primer elemento");
+alert("Borraremos el primer elemento");
 articulos.shift (); //El método shift borra el primer elemento
 document.write ("<p>" + articulos[0] + "<br/>");
 document.write (articulos[1] + "<br/>");
@@ -28,7 +28,7 @@ document.write (articulos[2] + "<br/>");
 document.write (articulos[3] + "<br/>");
 document.write (articulos[4] + "<br/></p>");
 
-alert ("Ahora borraremos el ultimo elemento");
+alert("Ahora borraremos el ultimo elemento");
 articulos.pop (); //El método pop borra el último elemento
 document.write ("<p>" + articulos[0] + "<br/>");
 document.write (articulos[1] + "<br/>");
