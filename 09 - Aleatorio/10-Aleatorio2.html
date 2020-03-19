@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var aleatorio = Math.round(Math.random() * 100);
+    /*Math.random elije un numero aleatorio entre el 0 y el 1. Esto es, desde el 0 (Incluido) hasta el 1 pero sin incluirlo (excluido),
+    el cual se puede escalar hasta el rango deseado.
+    La función Math.round() retorna el valor de un número redondeado al entero más cercano.*/
+    
+    var minum, intentos;
+
+    minum = 0;
+    intentos = 0;
+
+    do {
+      minum = prompt("Introduce un número entre 0 y 100");
+        if (aleatorio > minum) {
+          //alert ("Más alto")
+          document.write("Más alto" + "<br/>");
+        }
+
+        if (aleatorio < minum) {
+          //alert ("Más bajo")
+          document.write("Más bajo" + "<br/>");
+        }
+
+        intentos++;
+    } while (aleatorio != minum);
+
+    //alert (""Correcto. Has consumido " + intentos + " intentos.")
+    document.write("Correcto. Has consumido " + intentos + " intentos.");
+  </script>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <table border="0" width="25%">
+      <tr>
+        <td>
+          <label for="c_mensaje"></label>
+          <input id="c_mensaje" name="textfield" type="text">
+        </td>
+        <td>
+          <label for="c_intentos"></label>
+          <input id="c_intentos" name="textfield2" type="text">
+        </td>
+        <td>
+          <label for="c_numelegido"></label>
+          <input id="c_numelegido" name="textfield3" type="text">
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      let aleatorio = Math.round(Math.random() * 100);
+
+      let minum, intentos;
+      let mensaje = document.getElementById ("c_mensaje");
+      let intentos_consumidos = document.getElementById ("c_intentos");
+      let minumElegido = document.getElementById("c_numelegido");
+
+      minum = 0;
+      intentos = 0;
+      
+      do {
+        minum = prompt ("Introduce un número entre 0 y 100");
+        if (aleatorio > minum) {
+          mensaje.value = "Más alto"; //La propiedad "value" hace referencia al valor que hay dentro de un cuadro de texto.
+          mensaje.style.fontSize = "18px"; // Objeto.propiedad=valor
+          mensaje.style.color = "red";
+        }
+
+        if (aleatorio < minum) {
+          mensaje.value = "Más bajo";
+          mensaje.style.fontSize = "18px";
+          mensaje.style.color = "red";
+        }
+
+          intentos++;
+          intentos_consumidos.value = intentos;
+          intentos_consumidos.style.fontSize = "18px";
+          intentos_consumidos.style.color = "red";
+          intentos_consumidos.style.textAlign = "center";
+
+          minumElegido.value = minum;
+          minumElegido.style.background = "violet";
+          minumElegido.style.textAlign = "center";
+      } while (aleatorio !== minum);
+
+      mensaje.value = "Correcto";
+      mensaje.style.color = "green";
+
+      minumElegido.value = "Correcto, el número era el " + minum;
+      minumElegido.style.background = "violet";
+      minumElegido.style.textAlign = "center";
+
+    </script>
+</body>
+
+</html>

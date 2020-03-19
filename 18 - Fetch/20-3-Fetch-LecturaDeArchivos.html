@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fetch III</title>
+</head>
+<style>
+  img {
+    width: 100%;
+  }
+</style>
+
+<body>
+<h1 id="title">Fetch III</h1>
+<button id="button-img">See Image</button>
+<button id="button-pdf">See PDF</button>
+<img id="img" class="img">
+<a id="pdf" href="#" target="_blank"> Descargar</a>
+
+<script>
+
+  const buttonImg = document.getElementById('button-img');
+  const buttonPDF = document.getElementById('button-pdf');
+
+  buttonImg.addEventListener('click', () => {
+    fetch('images/dog.jpg')
+      .then(res => console.log(res))
+      .then(img => {
+        document.getElementById('img').src = 'images/dog.jpg';
+      })
+  });
+</script>
+</body>
+
+</html>

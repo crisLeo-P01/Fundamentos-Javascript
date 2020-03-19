@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style>
+table{
+	margin:auto;
+}
+</style>
+
+
+</head>
+
+<body id="cuerpo">
+<form name="form1" method="post" action="" id="miformulario">
+  <table width="25%" border="1" id="mitabla">
+    <tr>
+      <td>Nombre:</td>
+      <td><input type="text" name="textfield" id="textfield"></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="textfield2" id="textfield2"></td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td><input type="text" name="textfield3" id="textfield3"></td>
+    </tr>
+    <tr>
+      <td>Carnet:</td>
+      <td><input type="text" name="textfield4" id="textfield4"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Enviar"></td>
+      <td><input type="reset" name="button2" id="button2" value="Restablecer"></td>
+    </tr>
+  </table>
+</form>
+
+<script>
+
+//----------------------- UNA FORMA DE PRESENTAR EL PROGRAMA ------------------------
+
+let cuerpo = document.getElementById ("cuerpo");
+let colorWeb = prompt ("Introduce el color de fondo. Azul/Verde/Rojo/Magenta").toLowerCase();
+//var colorWeb=prompt("Introduce el color de fondo. Azul/Verde/Rojo") .toUpperCase();
+
+
+/*
+	if(colorWeb=="azul") {
+		cuerpo.style.background="blue";
+	}
+	else if(colorWeb=="rojo") {
+		cuerpo.style.background="red";
+	}
+	else if(colorWeb=="verde") {
+		cuerpo.style.background="green";
+	}
+	else {
+		alert("El color que usted eligio no esta contemplado");
+	}
+*/
+
+//--------------------- OTRA FORMA DE PRESENTAR EL PROGRAMA --------------------------
+
+if (colorWeb !== "rojo" && colorWeb !== "azul" && colorWeb !== "verde" && colorWeb !== "magenta") {
+  alert ("El color que usted selecciono no está contemplado");
+}
+
+else if (colorWeb === "rojo") {
+	cuerpo.style.background= "red";
+}
+
+else if (colorWeb === "verde") {
+	cuerpo.style.background = "green";
+}
+
+else if (colorWeb === "magenta") {
+	cuerpo.style.background = '#FF00FF'; // si queremos un color en particular se puede colocar entre comillas simples el color específico
+}
+
+else {
+	cuerpo.style.background="blue";
+}
+
+</script>
+
+<!--En la variable colorWeb le estamos diciendo al usuario que introduzca un color. Pero a la hora de elegir un color el usuario puede escribirlo en minúsculas, en mayúsculas o como se le de la gana. Entonces a la hora de colocar por ejemplo el azul todo el minúsculas, nos vamos a encontrar en un problema. Porque el programa solo esta permitido recibir el color pero con la primera palabra en mayúsculas y no en minúsculas. ¿Que se puede hacer?
+Con el método toLowerCase(); Hace que al ingresar el usuario un color pueda colocarlo en minúsculas o en mayúsculas, da igual en la forma que lo ingrese, gracias a este método. Ahora si decidimos colocarle el .toLowerCase(); en la condición del if hay que colocarlos todos en minúsculas.
+Lo mismo pasa con el método .toUpperCase(); Si colocamos este método en el condicional if hay que ponerlo todo en mayúsculas.
+-->
+
+</body>
+</html>

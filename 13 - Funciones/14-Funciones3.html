@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora Arcaica</title>
+
+  <script>
+    let repetir = "si";
+
+    // function suma(num1, num2) {
+    //   alert("La suma es: " + (num1 + num2));
+    // }
+
+    const suma = (num1, num2) => alert("La suma es: " + (num1 + num2));
+
+    // function resta(num1, num2) {
+    //   alert("La resta es: " + (num1 - num2));
+    // }
+
+    const resta = (num1, num2) => alert("La resta es: " + (num1 - num2));
+
+    // function division(num1, num2) {
+    //   alert("La division es: " + (num1 / num2));
+    // }
+
+    const division = (num1, num2) => alert("La división es: " + (num1 / num2));
+
+
+    // function multiplicar(num1, num2) {
+    //   alert("La multiplicacion es: " + (num1 * num2));
+    // }
+
+    const multiplicar = (num1, num2) => alert("La multiplicación es: " + (num1 * num2));
+
+    do { //No hace falta que empiece desde la function ya que siempre va a estar ya memorizada por el navegador...
+
+      let operacion = prompt("Que operación deseas realizar").toLowerCase();
+      let operacion1 = parseInt(prompt("Introduce el primer n°"));
+      let operacion2 = parseInt(prompt("Introduce el segundo n°"));
+
+      if (operacion == "suma") {
+        suma(operacion1, operacion2);
+      }
+      else if (operacion == "resta") {
+        resta(operacion1, operacion2);
+      }
+      else if (operacion == "division") {
+        division(operacion1, operacion2);
+      }
+      else if (operacion == "multiplicar") {
+        multiplicar(operacion1, operacion2);
+      }
+
+      else {
+        alert("Lo siento. La operación no esta contemplada.");
+      }
+
+      repetir = prompt("¿Desea realizar otra operación?").toLowerCase();
+
+    } while (repetir == "si");
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

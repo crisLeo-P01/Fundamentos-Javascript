@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paso de parámetros</title>
+
+  <script>
+    // function EscribeNombre (nombre) {
+    //     document.write(nombre);
+    // }
+
+    const escribeNombre = (nombre) => {
+      document.write(nombre);
+    };
+
+    let miNombre = prompt("Introduce tu nombre:");
+
+    // function escribeEdad(edad) {
+    //     document.write(edad);
+    // }
+
+    const escribeEdad = (edad) => {
+      document.write(edad);
+    };
+
+    let miEdad = prompt('Ingresa tu edad');
+  </script>
+</head>
+
+<body>
+  <p>El nombre del usuario es: <script>escribeNombre(miNombre)</script></p>
+  <p>El nombre del usuario es: <script>escribeEdad(miEdad)</script></p>
+</body>
+</html>
