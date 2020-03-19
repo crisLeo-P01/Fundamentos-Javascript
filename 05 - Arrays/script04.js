@@ -37,7 +37,7 @@ console.log(arrConcatenar);
 let arrConcatenar02 = [...arr3, ...arr4];
 console.log(arrConcatenar02);
 
-//Enviar un número indefinido de argumentos a una función (parámetros REST)/////
+//Enviar un número indefinido de argumentos a una función (parámetros REST)////
 const restParms = (...numbers) => {
   console.log(numbers)
 };
