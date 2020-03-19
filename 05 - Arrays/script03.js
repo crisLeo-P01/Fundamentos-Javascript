@@ -115,7 +115,7 @@ const users = [
   }
 ];
 
-const userOnline = users.reduce((cont, user)=> {
+const userOnline = users.reduce((cont, user) => {
   if(user.online) cont++;
   return cont;
 }, 0);
