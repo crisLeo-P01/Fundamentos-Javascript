@@ -1,7 +1,6 @@
 let articulos = ["Zapatillas", "Camisetas", "Pantalon", "Calcetines"];
 
 document.write ("<p> El primer articulo es <strong>" + articulos [0] + "</strong></p>");
-//document.write (articulos[0] + "</strong></p>");
 
 document.write ("<p> El ultimo elemento es <strong>");
 document.write (articulos[articulos.length-1] + "</strong></p>");
