@@ -44,3 +44,17 @@ const getEmail = async (user) => {
   });
 };
 
+const getInfo = async (id) => {
+  try {
+    const user = await getUser(id);
+    const res = await getEmail(user);
+    return `${user.name} email is ${res.email}`
+  }catch (e) {
+    console.log(e);
+  }
+};
+
+
+getInfo(1).then(res => console.log(res));
+
+
