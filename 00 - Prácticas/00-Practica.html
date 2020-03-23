@@ -9,63 +9,6 @@
   <h1 id="title">Practicando</h1>
 
   <script>
-    const users = [
-      {
-        id: 1,
-        name: 'Cristian'
-      },
-      {
-        id: 2,
-        name: 'Malena'
-      },
-      {
-        id: 3,
-        name: 'Emiliano'
-      }
-    ];
-
-    const emails = [
-      {
-        id: 1,
-        email: 'cristian@gmail.com'
-      },
-      {
-        id: 2,
-        email: 'malena@gmail.com'
-      }
-    ];
-
-    const getUsers = (id) => {
-      const user = users.find(user => user.id == id);
-      const promise = new Promise((resolve, reject) => {
-        if(!user) {
-          reject('No existe usuario')
-        } else {
-          resolve(user)
-        }
-      });
-      return promise;
-    };
-
-    const getEmail = (user) => {
-      const email = emails.find(email => email.id == user.id);
-      return  promise = new Promise((resolve, reject) => {
-        if(!email) {
-          reject(`El usuario ${user.name} no tiene email`)
-        } else {
-          resolve({
-            id: user.id,
-            name: user.name,
-            email: email.email
-          });
-        }
-      });
-    };
-
-    getUsers(3)
-      .then(user => getEmail(user))
-      .then(res => console.log(res))
-      .catch(err => console.log(err))
 
   </script>
 </body>
