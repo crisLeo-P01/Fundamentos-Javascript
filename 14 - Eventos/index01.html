@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Practicando</title>
+
+  <style>
+    #btn3 {
+      width: 250px;
+      height: 250px;
+    }
+    .red {
+      background: red;
+    }
+    .violet{
+      background: violet;
+    }
+
+    #btn5 {
+      width: 150px;
+      height: 150px;
+      background: green;
+    }
+    #btn6 {
+      width: 150px;
+      height: 150px;
+      background: yellow;
+    }
+    #btn7 {
+      width: 150px;
+      height: 150px;
+      background: blueviolet;
+    }
+
+    /*//////////////////////*/
+
+    .gallery {
+      width: 70%;
+      margin: 25px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .gallery__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Eventos con el mouse</h1>
+
+  <button type="button" id="btn">EMPEZAR</button>
+  <button type="button" id="btn2">EMPEZAR 2</button>
+  <div class="btn3 red" id="btn3"></div>
+  <button type="button" id="btn5"></button>
+  <button type="button" id="btn6"></button>
+  <button type="button" id="btn7"></button>
+
+<h1>Eventos con el teclado</h1>
+
+<label for="input">Hola mundo</label>
+<input type="text" name="input" id="input">
+
+<label for="input2">Hola Luna</label>
+<input type="text" name="input2" id="input2">
+
+<label for="input3">Hola Marte</label>
+<input type="text" name="input3" id="input3">
+
+<!--//////////////////////////////////////////////////-->
+
+<div>
+  <form id="form">
+    <label for="input4"></label>
+    <input type="text" name="input4" id="input4">
+    <input type="submit" value="enviar">
+  </form>
+</div>
+
+<!--//////////////////////////////////////////////////-->
+
+<div id="gallery" class="gallery">
+  <div class="gallery__item">1</div>
+  <div class="gallery__item">2</div>
+  <div class="gallery__item">3</div>
+  <div class="gallery__item">4</div>
+  <div class="gallery__item">5</div>
+  <div class="gallery__item">6</div>
+  <div class="gallery__item">7</div>
+  <div class="gallery__item">8</div>
+  <div class="gallery__item">9</div>
+</div>
+
+<script src="script01.js"></script>
+</body>
+</html>
