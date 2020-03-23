@@ -1,0 +1,44 @@
+#btn3 {
+    width: 250px;
+    height: 250px;
+}
+.red {
+    background: red;
+}
+.violet{
+    background: violet;
+}
+
+#btn5 {
+    width: 150px;
+    height: 150px;
+    background: green;
+}
+#btn6 {
+    width: 150px;
+    height: 150px;
+    background: yellow;
+}
+#btn7 {
+    width: 150px;
+    height: 150px;
+    background: blueviolet;
+}
+
+/*//////////////////////*/
+
+.gallery {
+    width: 70%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gallery__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    cursor: pointer;
+}
