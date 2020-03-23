@@ -59,7 +59,6 @@ btn7.addEventListener('mousemove', () => {
 <!--  - keypress => cuando pulsamos una tecla del teclado y no la soltamos-->
 
 const input = document.getElementById('input');
-
 input.addEventListener('keydown', () => {
     console.log('Es presionado una tecla');
 });
@@ -78,7 +77,6 @@ input3.addEventListener('keypress', () => {
 ////////////////////////////////////////////////////
 
 const input4 = document.getElementById('input4');
-
 input4.addEventListener("keydown", (e) => {
     console.log(e.key);
 });
@@ -86,7 +84,6 @@ input4.addEventListener("keydown", (e) => {
 ////////////////////////////////////////////////////
 
 const gallery = document.getElementById('gallery');
-
 gallery.addEventListener('click', (e) => {
     console.log(e.target.textContent);
 });
@@ -95,4 +92,4 @@ const form = document.getElementById('form');
 form.addEventListener('submit', (ev) => {
     ev.preventDefault();
     console.log('El formulario se ha enviado');
-})
+});
