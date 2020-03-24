@@ -15,7 +15,6 @@ const getData = (id) => {
 
     if (id == undefined) { //Tenemos que preguntar si ID existe para ver si estamos cargando por primera vez la página o no
         xhr.open('GET', 'marvel.php'); //Si el ID es undefined, significa que no estamos haciendo una solicitud desde el formulario, sino que estamos cargando la página por primera vez
-
         //Una vez que lo tenemos, tenemos que escuchar la respuesta para saber que los datos ya lo tenemos
         xhr.addEventListener('load', (data) => {
             const dataJSON = JSON.parse(data.target.response); // Convertimos ese dato en formato JSON
@@ -25,7 +24,7 @@ const getData = (id) => {
             const fragment = document.createDocumentFragment();
             for (const heroes of dataJSON) {
                 const option = document.createElement('OPTION');
-                option.setAttribute('value', heroes.ID);
+                option.setAttribute('value', heroes.ID); //El ID está en mayúsculas ya que en la BD está así.
                 option.textContent = heroes.Name;
                 fragment.appendChild(option);
             }
