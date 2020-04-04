@@ -25,7 +25,7 @@ sayHello().then(res => console.log(res));
 const users = [{id: 1, name: 'Dorian'}, {id: 2, name: 'Laura'}, {id: 3,name: 'Carlos'}];
 const emails = [{id: 1,email: 'dorian@gmail.com'},{id: 2,email: 'laura@gmail.com'}];
 
-const getUser = async (id) => {
+const getUser = async (id) => { //Al escribir async ya estamos devolviendo una promesa.
   const user = users.find(user => user.id == id);
   /*Lanzando un nuevo error con throw new Error, en el cual, el
   * new Error es un constructor que construye un objeto error y se le pasa
@@ -46,6 +46,8 @@ const getEmail = async (user) => {
 };
 
 const getInfo = async (id) => {
+  /* La declaración try...catch señala un bloque de instrucciones a intentar (try), y especifica una respuesta si se
+  produce una excepción (catch).*/
   try {
     const user = await getUser(id);
     const res = await getEmail(user);
