@@ -19,11 +19,11 @@ form.addEventListener('submit', (e) => {
 });
 
 name.addEventListener('change', (e) => { //El change hace que detecte cualquier cambio dentro del campo
-    if(e.target.value.trim().length > 0) formInValid.name = true
+    if(e.target.value.trim().length > 0) formInValid.name = true //trim() es para que no haya espacios en blanco
 });
 
 email.addEventListener('change', (e) => {
-    if(e.target.value.trim().length > 0) formInValid.email = true //trim() es para que no haya espacios en blanco
+    if(e.target.value.trim().length > 0) formInValid.email = true
 });
 
 gender.addEventListener('change', (e) => {
@@ -31,13 +31,13 @@ gender.addEventListener('change', (e) => {
 });
 
 terms.addEventListener('change', (e) => {
-    formInValid.terms = e.target.checked;
+    formInValid.terms = e.target.checked; //Esto es que si el checked es true el formInValid es true y sino lo contrario
     e.target.checked ? button.removeAttribute('disabled') : button.setAttribute('disabled', true);
 });
 
 const validateForm = () => {
-    const formValues = Object.values(formInValid);
-    const valid = formValues.findIndex(value => value === false);
-    if(valid === -1) form.submit();
+    const formValues = Object.values(formInValid); //Como el objeto no nos sirve lo convertimos en un array ára comprobar que no haya ningún false
+    const valid = formValues.findIndex(value => value === false); //Esto lo que hace es buscar si hay algún false. Si por ej en la posición de email es es false no daría uno en la posición del array. Si da -1 es que email es true.
+    if(valid === -1) form.submit(); //En caso que sea true con -1, enviará el formulario.
     else alert('Form Invalid');
 };
