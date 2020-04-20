@@ -9,7 +9,7 @@ const validateDni = (dni) => {
     const nie = str
         .replace(/^[X]/, '0')
         .replace(/^[Y]/, '1')
-        .replace(/^[Z]/, '2')
+        .replace(/^[Z]/, '2');
 
     const letter = str.substr(-1);
     const charIndex = parseInt(nie.substr(0, 8)) % 23;
@@ -20,7 +20,7 @@ const validateDni = (dni) => {
 };
 
 const validateEmail = (email) => {
-    const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if(emailRegex.test(email)) console.log('email válido');
     else console.log('email incorrecto')
