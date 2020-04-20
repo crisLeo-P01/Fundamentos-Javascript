@@ -6,7 +6,7 @@ const email = document.getElementById('email');
 const gender = document.getElementById('gender');
 const terms = document.getElementById('terms');
 
-const formInValid = {
+const formInValid = { //Cuando la página esta cargada todos los items del form están en false
     name: false,
     email: false,
     gender: false,
@@ -36,8 +36,8 @@ terms.addEventListener('change', (e) => {
 });
 
 const validateForm = () => {
-    const formValues = Object.values(formInValid); //Como el objeto no nos sirve lo convertimos en un array ára comprobar que no haya ningún false
-    const valid = formValues.findIndex(value => value === false); //Esto lo que hace es buscar si hay algún false. Si por ej en la posición de email es es false no daría uno en la posición del array. Si da -1 es que email es true.
+    const formValues = Object.values(formInValid); //Como el objeto no nos sirve lo convertimos en un array para comprobar que no haya ningún false
+    const valid = formValues.findIndex(value => value === false); //Esto lo que hace es buscar si hay algún false. Si por ej en la posición de email es false no daría uno en la posición del array. Si da -1 es que email es true.
     if(valid === -1) form.submit(); //En caso que sea true con -1, enviará el formulario.
     else alert('Form Invalid');
 };
