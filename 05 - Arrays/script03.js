@@ -7,6 +7,8 @@ let palabra = 'Hola Mundo';
 console.log(Array.from(palabra));
 console.log(palabra.split(''));
 
+console.log(palabra.split(' '));
+
 //ARRAY SORT()
 /*
 .sort([callback]) - Ordena los elementos de un array alfabéticamente(valor Unicode),si le pasamos un
