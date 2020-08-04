@@ -48,16 +48,16 @@ console.log(".forEach()");
 const numeros2 = [12, 25, 47, 84, 98];
 numeros2.forEach((numeros2) => console.log(numeros2));
 
+const numeros3 = [7, 25, 23, 105, 32];
+numeros3.forEach((num3, index) => console.log(`${num3} está en la posición ${index}`));
+
 for(let i = 0; i < numeros2.length; i++) {
   console.log(numeros2[i]);
-}
 
+}
 for(const n2 in numeros2){
   console.log(numeros2[n2]);
 }
-
-const numeros3 = [12, 25, 47, 84, 98];
-numeros3.forEach((num3, index) => console.log(`${num3} está en la posición ${index}`));
 
 //.some(callback) - Comprueba si al menos un elemento del array cumple la condición. Devuelve true o false
 console.log(".some()");
