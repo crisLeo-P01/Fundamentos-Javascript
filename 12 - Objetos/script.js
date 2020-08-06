@@ -15,11 +15,11 @@ for(const z in persona) {
 }
 
 for(const i in persona) {
-    console.log(persona[i]);
+    console.log(persona[i]); //Recorremos los indices del objeto
 }
 
 for(const depFav in persona.deportesFavoritos) {
-    console.log(depFav);
+    console.log(depFav); // Recorremos los valores de dichos indices
 }
 /*Si ponemos in en el búcle for nos recorre el índice del array. Para mostrar las claves
 de dicha array hay que colocar "of" y de esa forma nos dara todos los valores que
