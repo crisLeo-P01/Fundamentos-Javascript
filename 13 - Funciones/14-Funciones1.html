@@ -45,6 +45,18 @@
       let precioProducto = producto(250);
 
       alert(precioProducto);
+
+      const producto02 = (precio02) => {
+          let costoEnvio02 = 40;
+          let impuesto02 = (precio02 * 21) /100;
+          return precio02 + costoEnvio02 + impuesto02;
+          let precioProducto02 = precio02 + impuesto02 + costoEnvio02;
+          return  precioProducto02
+      };
+
+      let precioProducto02 = producto02(250);
+
+      console.log(`El precio del producto es de ${precioProducto02}`);
     </script>
 
     <!-- ///////////////////////////////////////////////////// -->
