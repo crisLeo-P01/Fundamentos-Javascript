@@ -11,17 +11,17 @@ console.log('Edad del usuario: ' + persona.edad);
 console.log('Los deportes favoritos del usuario son: ' + persona.deportesFavoritos);
 
 for(const z in persona) {
-    console.log(z);
+    console.log(z); //Recorremos los índices del objeto
 }
 
 for(const i in persona) {
-    console.log(persona[i]); //Recorremos los indices del objeto
+    console.log(persona[i]); //Recorremos los valores del objeto
 }
 
 for(const depFav in persona.deportesFavoritos) {
     console.log(depFav); // Recorremos los valores de dichos indices
 }
-/*Si ponemos in en el búcle for nos recorre el índice del array. Para mostrar las claves
+/*Si ponemos in en el bucle for nos recorre el índice del array. Para mostrar las claves
 de dicha array hay que colocar "of" y de esa forma nos dara todos los valores que
 contiene el array.
 */
