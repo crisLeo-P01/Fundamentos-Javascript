@@ -6,6 +6,7 @@ const table = document.getElementById('table');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     getData(characters.children[characters.selectedIndex].value);
+    //Con esta línea tomamos el value del selected seleccionado. De esta forma tomamos el select con todos sus nodos
 });
 
 const getData = (id) => {
@@ -13,7 +14,7 @@ const getData = (id) => {
     if (window.XMLHttpRequest) xhr = new XMLHttpRequest(); //Para navegadores actuales y e inclusive para IE 11
     else xhr = new ActiveXObject("Microsoft.XMLHTTP"); // Para IE anteriores a ie 11
 
-    if (id == undefined) { //Tenemos que preguntar si ID existe para ver si estamos cargando por primera vez la página o no
+    if (id === undefined) { //Tenemos que preguntar si ID existe para ver si estamos cargando por primera vez la página o no
         xhr.open('GET', 'marvel.php'); //Si el ID es undefined, significa que no estamos haciendo una solicitud desde el formulario, sino que estamos cargando la página por primera vez
         //Una vez que lo tenemos, tenemos que escuchar la respuesta para saber que los datos ya lo tenemos
         xhr.addEventListener('load', (data) => {
@@ -32,7 +33,10 @@ const getData = (id) => {
             characters.appendChild(fragment);
         })
     } else { // Si está definido significa que hemos presionado el button de GET DATA y le estamos enviando un ID
-        xhr.open('GET', `marvel.php?id=${id}`); // PHP necesita del ID que le estamos pasando
+        xhr.open('GET', `marvel.php?id=${id}`);
+        // El php necesita recibir el id que le estamos pasando. La forma de pasar
+        // parámetros por GET es con un signo de interrogación. T/ lo que vaya después
+        // de la interrogación, tiene que ir como los objetos, (clave = valor)
 
         xhr.addEventListener('load', (data) => {
             const dataJSON = JSON.parse(data.target.response);
@@ -66,10 +70,10 @@ const getData = (id) => {
                 fragment.append(row)
             }
 
-            //Borramos el los datos del héroe seleccionado cuando seleccionamos un nuevo héroe
-            if (table.children[1]) { // Es [1] xq en la posición 0 se encuentra la fila de los detalles del héroe
-                table.removeChild(table.children[1])
-            }
+            //Borramos los datos del héroe seleccionado cuando seleccionamos un nuevo héroe
+            // if (table.children[1]) { // Es [1] xq en la posición 0 se encuentra la fila de los detalles del héroe
+            //     table.removeChild(table.children[1])
+            // }
             table.append(fragment)
         })
     }
