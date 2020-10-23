@@ -8,7 +8,7 @@ Objeto Math
 console.log(Math.E);
 console.log(Math.PI);
 
-<!--  Métodos-->
+// Métodos
 
 // Math.abs(x) / Devuelve el valor absoluto de x. Esto quiere decir que si al parámetro de Math.abs() le colocamos un
 // -34, nos devolverá un 34 positivo
