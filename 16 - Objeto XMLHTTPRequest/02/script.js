@@ -26,6 +26,7 @@ const getData = (id) => {
             for (const heroes of dataJSON) {
                 const option = document.createElement('OPTION');
                 option.setAttribute('value', heroes.ID); //El ID está en mayúsculas ya que en la BD está así.
+                //Establece un atributo el cual es añadido con el nombre y valor indicado
                 option.textContent = heroes.Name;
                 fragment.appendChild(option);
             }
