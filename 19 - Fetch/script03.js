@@ -10,7 +10,7 @@ const buttonImg = document.getElementById('button-img');
 const buttonPDF = document.getElementById('button-pdf');
 
 buttonImg.addEventListener('click', () => {
-  fetch('../assets/images/dog.jpg') //Petición a un recurso
+  fetch('lupe.jpg') //Petición a un recurso
     .then(res => res.blob())
     .then(img => {
       document.getElementById('img').src = URL.createObjectURL(img);
@@ -18,7 +18,7 @@ buttonImg.addEventListener('click', () => {
 });
 
 buttonPDF.addEventListener('click', () => {
-  fetch('../assets/demo.pdf')
+  fetch('comprobante.pdf')
     .then(res => res.blob())
     .then(pdf => {
       document.getElementById('pdf').href = URL.createObjectURL(pdf);
