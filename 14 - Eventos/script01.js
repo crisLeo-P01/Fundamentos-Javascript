@@ -1,11 +1,11 @@
-<!--  EVENTOS de ratón-->
-<!--    - click: cuando pulsamos el botón izquierdo del mouse-->
-<!--    - dblclick: cuando pulsamos dos veces el botón izquierdo del mouse-->
-<!--    - mouseenter: cuando entramos en la zona que tiene el evento-->
-<!--    - mouseleave: cuando salimos de la zona que tiene el evento-->
-<!--    - mousedown: cuando pulsamos y no soltamos el botón izquierdo del mouse-->
-<!--    - mouseup: cuando soltamos el botón izquierdo del mouse-->
-<!--    - mousemove: cuando movemos el mouse sobre el evento-->
+// EVENTOS de ratón
+//   - click: cuando pulsamos el botón izquierdo del mouse
+//   - dblclick: cuando pulsamos dos veces el botón izquierdo del mouse
+//   - mouseenter: cuando entramos en la zona que tiene el evento
+//   - mouseleave: cuando salimos de la zona que tiene el evento
+//   - mousedown: cuando pulsamos y no soltamos el botón izquierdo del mouse
+//   - mouseup: cuando soltamos el botón izquierdo del mouse
+//   - mousemove: cuando movemos el mouse sobre el evento
 
 // EVENTO CLICK
 const btn = document.getElementById('btn');
@@ -53,10 +53,10 @@ btn7.addEventListener('mousemove', () => {
     console.log('MOUSEMOVE');
 });
 
-<!--EVENTOS DE TECLADO-->
-<!--  - keydown => cuando apretamos una tecla del teclado-->
-<!--  - keyup => cuando soltamos una tecla del teclado-->
-<!--  - keypress => cuando pulsamos una tecla del teclado y no la soltamos-->
+// EVENTOS DE TECLADO
+//  - keydown => cuando apretamos una tecla del teclado
+//  - keyup => cuando soltamos una tecla del teclado
+//  - keypress => cuando pulsamos una tecla del teclado y no la soltamos
 
 const input = document.getElementById('input');
 input.addEventListener('keydown', () => {
