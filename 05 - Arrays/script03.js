@@ -87,7 +87,7 @@ console.log(number4);
 //.reduce(callback) - Reduce todos los elementos del array a un único valor
 console.log(".reduce()");
 const numeros6 = [3, 7, 18, 37, 32, 64, 107, 9];
-console.log(numeros6.reduce((a, b) => a+b));
+console.log(numeros6.reduce((a, b) => a + b));
 
 //EJEMPLO DE REDUCE
 const users = [
