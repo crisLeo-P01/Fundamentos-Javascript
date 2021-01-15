@@ -39,17 +39,16 @@
         let impuesto = (precio * 21) / 100;
         return precio + costoEnvio + impuesto;
         let precioProducto = precio + impuesto + costoEnvio;
-        return precioProducto;
       }
 
-      let precioProducto = producto(250);
+      let precioProducto = producto(1200);
 
-      alert(precioProducto);
+      console.log(precioProducto);
 
       const producto02 = (precio02) => {
           let costoEnvio02 = 40;
           let impuesto02 = (precio02 * 21) /100;
-          return precio02 + costoEnvio02 + impuesto02;
+          // return precio02 + costoEnvio02 + impuesto02;
           let precioProducto02 = precio02 + impuesto02 + costoEnvio02;
           return  precioProducto02
       };
