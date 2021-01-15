@@ -1,4 +1,18 @@
 
+/*
+AJAX
+Ajax es asíncrono. Pero que significa eso?
+Normalmente cuando hacemos una petición y esperamos una respuesta, el navegador se queda esperando y hasta que no recibimos
+todos los datos, pues no carga la página. Esto pasa por ejemplo que cuando esperamos que cargue una página, este no se muestra
+hasta que no este cargada en su totalidad. Con AJAX conseguimos que se cargue la página y todos los datos que hagamos como
+petición al servidor lleguen más tarde porque normalmente cuando hacemos una petición con AJAX, estamos haciendo una consulta
+a una base de datos o estamos haciendo una consulta a una API que nos devuelve una serie de datos, pues si se piden muchos datos
+es posible que la petición tarde y sobre t/ si tenemos una conexión de internet baja. Entonces lo que logra AJAX es que la página
+trabaje de forma asíncrona. Eso significa que no esta sincronizada con la página. Es decir, que la página va por un lado y las peticiones
+y los datos, van por otro.
+
+ */
+
 /* Protocolo HTTP: https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto */
 /* Códigos de estado de respuesta HTTP: https://developer.mozilla.org/es/docs/Web/HTTP/Status */
 
