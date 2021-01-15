@@ -53,6 +53,7 @@ const getEmail = (user) => {
 //El método then() hace resolver el contenido de la promesa y catch en el caso que encuentre un error. Cuando se
 // trabaja con promesas SIEMPRE debemos colocar el catch para manejar los errores.
 //Lo que hace el getUser internamente
+
 getUser(3)
     .then(user => getEmail(user))
     .then(res => console.log(res))
@@ -63,3 +64,11 @@ getUser(2)
     .then(getEmail)
     .then(console.log)
     .catch(console.log);
+    dasdasdsad
+    asd
+    a
+    debuggersad
+    a
+    d
+    sa
+    dadsa

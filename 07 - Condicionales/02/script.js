@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Condicional Switch</title>
-</head>
-
-<body>
-
-  <script>
-    let dia = parseInt(prompt("Introduce un número del 0 al 6 siendo 1(Lunes) y 0(Domingo)"));
+let dia = parseInt(prompt("Introduce un número del 0 al 6 siendo 1(Lunes) y 0(Domingo)"));
 
     // SINTAXIS SIMPLE
     switch(dia) {
@@ -36,11 +23,3 @@
       case 4:
       console.log(`${num} es par`); break;
     }
-  </script>
-
-  <section>
-  </section>
-
-</body>
-
-</html>

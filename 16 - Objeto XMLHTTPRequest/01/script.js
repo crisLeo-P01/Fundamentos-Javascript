@@ -6,8 +6,11 @@ const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
     let xhr;
+
+    // Para internet Explore por de bajo de la versión 11
     if(window.XMLHttpRequest) xhr = new XMLHttpRequest();
     else xhr = new ActiveXObject("Microsoft.XMLHTTP");
+    //////////
 
     xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
 

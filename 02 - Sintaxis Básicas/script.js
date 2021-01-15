@@ -1,4 +1,4 @@
-<!-- SENTENCIA
+/* SENTENCIA
 Las sentencias se consideran unidades básicas de programación y terminan todas en punto y coma (;) En principio el no colocar los (;) no dará error pero se recomienda colocarlas como buena práctica. Al tener un proyecto con cientos de líneas de códigos y al no colocar los (;) a simple vista no sabes donde termina y donde comienza otra. Entonces a la hora de corregir un fallo entre esas cientos de líneas se hace más difícil saber de donde radica el error.
 Ejemplos de sentencias serían: alert("Hola Mundo"); document.write("Hola mundo");
 
@@ -51,3 +51,4 @@ alert (edad);
 
 let contrato = "mensual",sueldo = 3000,vacaciones = "enero";
 alert (sueldo);
+*/
