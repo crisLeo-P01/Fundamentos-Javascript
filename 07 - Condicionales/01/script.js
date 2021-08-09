@@ -1,28 +1,28 @@
-let precioCoche = 60000;
 
-alert ("El valor del auto es de: $" + precioCoche + " pesos.");
+let num = 6;
 
-let dineroAhorrado = prompt ("Introduce cuanto tienes ahorrado");
-
-//  var edad=prompt("Introduce tu edad por favor");
-
-let loteria = prompt ("Te has ganado la lotería??");
-
-//  if(dineroAhorrado>=precioCoche && edad>=18){
-//    alert("Puedes comprar el coche");
-//  }
-
-if (dineroAhorrado >= precioCoche || loteria == "si") {
-  alert ("Puedes comprar el coche");
-}
-else {
-  alert ("No te alcanza para comprar el coche");
-}
-
-alert ("Continuamos con la ejecución del programa");
-
-let num = 5;
-
+/*Condicional simple*/
 if (num > 0) {
-  console.log(`${num} es mayor a 0`); //Es lo mismo que una concatenación. alt+96
+  console.log(`El número ${num} es mayor a 0`);
 }
+
+/*Condicional compuesta*/
+let num2 = 7;
+
+if (num2 < 5) {
+  console.log(`El número ${num2} es menor a 5`)
+} else {
+  console.log(`El número ${num2} es mayor a 5`)
+}
+
+/*Condicional múltiples*/
+let num3 = 0;
+
+if (num3 > 0) {
+  console.log(`El número ${num3} es mayor a 0`)
+} else if (num3 < 0) {
+  console.log(`El número ${num3} es menor a 0`)
+} else {
+  console.log(`El número ${num3} es igual a 0`)
+}
+
