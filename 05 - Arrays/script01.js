@@ -29,7 +29,7 @@ console.log (articulos[articulos.length-1] + "</strong></p>");
 articulos.shift ();
 console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]} <br> ${articulos[4]} <br> ${articulos[5]}</p>`);
 
-// POP elimina el último elemento del array
+//POP elimina el último elemento del array
 //El método pop borra el último elemento
 articulos.pop ();
 console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]}</p>`);
