@@ -1,19 +1,4 @@
 
-//PROPIEDADES ARRAY
-let numerosF = [1,2,3,4,5,6,7];
-
-console.log(numerosF.length);
-console.log(numerosF[3]);
-console.log(`La suma de ${numerosF[2]} y ${numerosF[4]} es ` + (numerosF[2] + numerosF[4]));
-
-///////////////////////////////////////////
-
-//MÉTODOS ARRAY
-// Array.isArray(variable a evaluar) - Devuelve true si la variable es un array
-
-let numberisArray = 7;
-console.log(Array.isArray(numberisArray));
-console.log(Array.isArray(numerosF));
 ///////////////////////////////////////////
 let palabras = ['Hola' , 'estamos' , 'trabajando' , 'con' , 'SublimeText3'];
 

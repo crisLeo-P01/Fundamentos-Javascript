@@ -7,7 +7,6 @@ console.log(numerosF[3]);
 console.log(`La suma de ${numerosF[2]} y ${numerosF[4]} es ` + (numerosF[2] + numerosF[4]));
 
 ///////////////////////////////////////////
-
 //MÉTODOS ARRAY
 // Array.isArray(variable a evaluar) - Devuelve true si la variable es un array
 
@@ -34,3 +33,30 @@ console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> $
 //El método pop borra el último elemento
 articulos.pop ();
 console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]}</p>`);
+
+
+
+///////////////////////////////////////////
+
+//REVERSE() invierte los elementos de un array
+let marcasAutos = ["Audi", "BMW", "Peugeot", "Ford"];
+console.log(marcasAutos.reverse());
+
+///////////////////////////////////////////
+//JOIN() devuelve un string con el separador que le indiquemos (por defecto, son comas)
+console.log(' JOIN()')
+let numJoin = [4, 7, 14, 3, 32, 43];
+console.log(numJoin);
+console.log(numJoin.join(' / '))
+
+///////////////////////////////////////////
+/*
+SPLICE(a, b, items) cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos
+a - indice de inicio
+b - número de elemento(opcional)
+items - elementos a añadir en el caso de que se añadan(opcional)
+*/
+
+let numSplice = [5, 9, 14, 32, 75, 105];
+console.log(numSplice.splice(2));
+//console.log(numSplice.splice(2, 2));
