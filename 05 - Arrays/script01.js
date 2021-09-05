@@ -1,26 +1,36 @@
+
+//PROPIEDADES ARRAY
+let numerosF = [1,2,3,4,5,6,7];
+
+console.log(numerosF.length);
+console.log(numerosF[3]);
+console.log(`La suma de ${numerosF[2]} y ${numerosF[4]} es ` + (numerosF[2] + numerosF[4]));
+
+///////////////////////////////////////////
+
+//MÉTODOS ARRAY
+// Array.isArray(variable a evaluar) - Devuelve true si la variable es un array
+
+let numberisArray = 7;
+console.log(Array.isArray(numberisArray));
+console.log(Array.isArray(numerosF));
+
+///////////////////////////////////////////
+
 let articulos = ["Zapatillas", "Camisetas", "Pantalon", "Calcetines"];
-
-document.write ("<p> El primer articulo es <strong>" + articulos [0] + "</strong></p>");
-
-document.write(`<p>El último elemento es <strong>${articulos[articulos.length-1]}</strong></p>`)
-
-//AGREGA ELEMENTO AL PRINCIPIO
+//UNSHIFT agrega uno o mas elementos a lo primero
 articulos.unshift ("Balón");
-document.write(`<p>Casi nos olvidamos!!! Agregamos este articulo: <strong>${articulos[0]}</strong></p>`);
+console.log (`<p>Casi nos olvidamos!!! Agregamos este articulo: <strong>${articulos[0]}</strong></p>`);
 
-document.write ("<p>Agreguemos un elemento más al final: <strong>");
-//AGREGA ELEMENTO AL FINAL
+//PUSH agrega uno o mas elementos al array a lo último
 articulos.push (prompt ("Introduce el articulo"));
-document.write (articulos[articulos.length-1] + "</strong></p>");
+console.log (articulos[articulos.length-1] + "</strong></p>");
 
-document.write(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]} <br> ${articulos[4]} <br> ${articulos[5]}</p>`);
-
-alert("Borraremos el primer elemento");
-//El método shift borra el primer elemento
+//SHIFT elimina el primer elemento del array
 articulos.shift ();
-document.write(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]} <br> ${articulos[4]} <br> ${articulos[5]}</p>`);
+console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]} <br> ${articulos[4]} <br> ${articulos[5]}</p>`);
 
-alert("Ahora borraremos el ultimo elemento");
+// POP elimina el último elemento del array
 //El método pop borra el último elemento
 articulos.pop ();
-document.write(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]}</p>`);
+console.log(`<p>${articulos[0]} <br> ${articulos[1]} <br> ${articulos[2]} <br> ${articulos[3]}</p>`);
