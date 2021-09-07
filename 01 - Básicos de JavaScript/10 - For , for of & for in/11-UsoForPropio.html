@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practicando</title>
+    <link rel="stylesheet" href="css/estilosPractica.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <style>
+    
+    </style>
+  </head>
+  <body></body>
+
+    <script>
+
+      let trabajador = [];
+      let sectorTrabajador = [];
+      let contadorTrabajador = 0;
+      let contadorArea = 0;
+      let persona = "";
+      let area = "";
+
+      do{
+        persona = prompt("Ingrese nombre del trabajador");
+        area = prompt("Ingrese en el área que trabaja " + persona);
+        trabajador[contadorTrabajador] = persona;
+        sectorTrabajador[contadorArea] = area;
+        contadorTrabajador++;
+        contadorArea++;
+      }while(persona !== "salir");
+
+      trabajador.pop();
+
+      for(let i=0; i<trabajador.length; i++) {
+        document.write("Trabajador: " + trabajador[i] + "<br>");
+        document.write("Sector en el que trabaja: " + sectorTrabajador[i] + "<br><br>");
+      }
+
+    </script>
+
+  </body>
+</html>
