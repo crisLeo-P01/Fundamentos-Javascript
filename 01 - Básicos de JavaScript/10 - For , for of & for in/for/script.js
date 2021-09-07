@@ -1,4 +1,3 @@
-
 /*
 	El bucle FOR es un bucle determinado a diferencia del bucle WHILE O DO WHILE. Con el bucle FOR ya sabremos a priori cuantas veces se va a ejecutar.
     SINTAXIS
