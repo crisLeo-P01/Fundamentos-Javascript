@@ -18,14 +18,14 @@ for (let z = 0; z < 20; z += 2) { // Va de dos en dos
 
 document.write(`<hr>`)
 
-for (let x = 10; x > 0; x--) { //Va de mayo a menor
-    document.write("Hello" + "&nbsp");
+for (let x = 10; x > 0; x--) { //Va de mayor a menor
+    document.write(`${x} &nbsp`);
 }
 
 document.write(`<hr>`)
 
 for (let t = 1; t < 10; t++) {
-    document.write("Saludos" + "<br>");
+    document.write(`${t} &nbsp`);
 }
 
 document.write(`<hr>`)
@@ -47,15 +47,11 @@ for (let i = 0; i < meses.length; i++) {// for del cual no sabemos cuantos eleme
     document.write(meses[i] + "<br>");
 }
 
-document.write(`<hr>`)
-
 for (let w = 1; w <= 100; w++){
     if(w%2 == 0) {
         console.log (w);
     }
 }
-
-document.write(`<hr>`)
 
 ///////////////////////////////////////////////
 
