@@ -1,7 +1,6 @@
-/*
-El operador de propagación (spread operator) permite que una expresión sea expandida en situaciones donde se esperan
-múltiples argumentos (llamadas a funciones) o múltiples elementos (arrays literales).
- */
+
+/*El operador de propagación (spread operator) permite que una expresión sea expandida en situaciones donde se esperan
+múltiples argumentos (llamadas a funciones) o múltiples elementos (arrays literales).*/
 
 const numeros = [4, 7, 13, 19, 38, 32, 89, 64, 107];
 console.log(...numeros); //Como trabaja el spread operator
