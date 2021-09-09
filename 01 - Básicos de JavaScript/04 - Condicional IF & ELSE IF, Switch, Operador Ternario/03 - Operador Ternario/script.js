@@ -19,4 +19,5 @@ let num2 = 8;
     ) : (
             console.log (`${num2} es impar`),
             console.log (`${num2} es par 2`)
+            
         )
