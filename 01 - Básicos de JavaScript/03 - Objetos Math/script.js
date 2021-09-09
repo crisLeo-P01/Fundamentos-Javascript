@@ -5,8 +5,8 @@ Objeto Math
       Math.PI
  */
 
-console.log(Math.E);
-console.log(Math.PI);
+console.log(Math.E); //representa la base de los logaritmos naturales
+console.log(Math.PI); //representa la relacion entre la longitud de la circunferencia de un circulo y su diametro
 
 // Métodos
 
