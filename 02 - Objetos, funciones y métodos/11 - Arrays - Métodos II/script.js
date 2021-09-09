@@ -26,6 +26,8 @@ let letras = ['c', 'h', 'f', 't', 'z', 'a'];
 console.log(letras);
 console.log(letras.sort());
 
+console.log(dsdasda)
+
 let numeros = [7, 3, 10, 1, 30, 700, 300];
 console.log(numeros);
 console.log(numeros.sort());
