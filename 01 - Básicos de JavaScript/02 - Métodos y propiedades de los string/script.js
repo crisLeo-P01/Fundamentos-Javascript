@@ -31,6 +31,11 @@ console.log ("///// .indexOf()");
 let marca = "Motorola";
 console.log (marca.indexOf('o'));
 
+//includes(valor [,inicio]) -> Igual que indexOf pero devuelve true o false
+console.log ("///// .includes");
+console.log (frase4.includes('s'));
+console.log (frase4.includes('s', 11)); //la última posición no la tiene en cuenta
+
 /*.replace(valor a buscar, valor nuevo) -> Reemplaza el fragmento de la cadena que le digamos y pone el valor nuevo*/
 console.log ("///// .replace()");
 let casa = "Casa nueva";
@@ -48,7 +53,6 @@ console.log ("///// .slice()");
 let frase2 = "Buenas noches amor";
 console.log (frase2.slice(-4));
 console.log (frase2.slice(3, 10)); //la última posición no la tiene en cuenta
-
 
 //.trim() -> Elimina los espacios al inicio y al final de la cadena
 console.log ("///// .trim()");
@@ -69,11 +73,6 @@ console.log (frase4.endsWith('e'));
 console.log (frase4.endsWith('s', 6)); //la última posición no la tiene en cuenta
 console.log (frase4.endsWith('Bonnie'));
 
-//includes(valor [,inicio]) -> Igual que indexOf pero devuelve true o false
-console.log ("///// .includes");
-console.log (frase4.includes('s'));
-console.log (frase4.includes('s', 11)); //la última posición no la tiene en cuenta
-
 //repeat(valor) -> Repite el string el número de veces que le indiquemos
 console.log ("//// .repeat");
 let frase5 = "Logitech";
@@ -83,7 +82,7 @@ console.log (frase5.repeat(3));
 console.log ("///// template string");
 let nombre = "Cristian";
 let apellido = "Paiva";
-let edad = "35";
+let edad = 35;
 
 //forma tradicional
 console.log ("Hola! Mi nombre es " + nombre + " y mi apellido " + apellido + ". Tengo " + edad + " años de edad.")
