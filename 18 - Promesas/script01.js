@@ -64,11 +64,3 @@ getUser(2)
     .then(getEmail)
     .then(console.log)
     .catch(console.log);
-    dasdasdsad
-    asd
-    a
-    debuggersad
-    a
-    d
-    sa
-    dadsa
