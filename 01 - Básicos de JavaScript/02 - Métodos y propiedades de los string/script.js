@@ -20,7 +20,7 @@ console.log (consola);
 let consolaMayus = consola.toUpperCase();
 console.log (consolaMayus);
 
-/*.toLowerCase() -> Devuelve la cadena a minúsculas */
+//.toLowerCase() -> Devuelve la cadena a minúsculas
 console.log ("///// .toLowerCase()");
 let pais = "ARGENTINA";
 console.log (pais.toLowerCase());
@@ -36,19 +36,18 @@ console.log ("///// .includes");
 console.log (frase4.includes('s'));
 console.log (frase4.includes('s', 11)); //la última posición no la tiene en cuenta
 
-/*.replace(valor a buscar, valor nuevo) -> Reemplaza el fragmento de la cadena que le digamos y pone el valor nuevo*/
+//.replace(valor a buscar, valor nuevo) -> Reemplaza el fragmento de la cadena que le digamos y pone el valor nuevo
 console.log ("///// .replace()");
 let casa = "Casa nueva";
 console.log (casa.replace('nueva', 'vieja'));
 
-/*.substring(inicio [,fin]) -> Extrae los caracteres desde el inicio hasta el fin (el final no se incluye)*/
+//.substring(inicio [,fin]) -> Extrae los caracteres desde el inicio hasta el fin (el final no se incluye)
 console.log ("///// .substring()");
 let frase = "Buenos días amor";
 console.log (frase.substring(3));
 console.log (frase.substring(7, 12)); //la última posición no la tiene en cuenta
 
-/*.slice(inicio [,fin]) -> Igual que substring pero admite valores negativos, si ponemos valores negativos
-empezará desde atrás.*/
+//.slice(inicio [,fin]) -> Igual que substring pero admite valores negativos, si ponemos valores negativos empezará desde atrás.
 console.log ("///// .slice()");
 let frase2 = "Buenas noches amor";
 console.log (frase2.slice(-4));
