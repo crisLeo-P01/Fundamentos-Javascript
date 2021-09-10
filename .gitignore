@@ -1,2 +1,6 @@
 .idea
 /00 - Practicas/
+package.json
+/node_modules/
+package-lock.json
+.eslintrc.json
