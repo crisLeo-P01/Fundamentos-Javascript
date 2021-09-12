@@ -27,9 +27,9 @@ switch (num) {
 case 1:
 case 3:
 case 5:
-console.log(`${num} es impar`); break;
+    console.log(`${num} es impar`); break;
 case 2:
 case 4:
-console.log(`${num} es par`); break;
-default: console.log('Numero no contemplado'),
+    console.log(`${num} es par`); break;
+default: console.log('Numero no contemplado');
 }
