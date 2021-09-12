@@ -1,7 +1,12 @@
-function creaMensaje() {
+// function creaMensaje() {
+//   let mensaje = "Mensaje de prueba"; //VARIABLE DEL ÁMBITO LOCAL
+//   alert(mensaje);
+// }
+
+const creaMensaje = () => {
   let mensaje = "Mensaje de prueba"; //VARIABLE DEL ÁMBITO LOCAL
-  alert(mensaje);
-}
+  console.log(mensaje);
+};
 
 creaMensaje();
 
@@ -77,6 +82,6 @@ const sumar3 = (num5, num6) => {
 console.log(sumar3(2, 4));
 /*
 Dentro de la función sumar3 ahy un if que si num5 es igual a 2 ejecute
-la suma. Al cumplirse, entra en el if y el función finaliza ahí sin 
+la suma. Al cumplirse, entra en el if y el función finaliza ahí sin
 imprimir el console.log que esta debajo.
 */
