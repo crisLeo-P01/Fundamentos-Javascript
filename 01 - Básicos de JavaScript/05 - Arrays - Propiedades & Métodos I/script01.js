@@ -3,7 +3,7 @@ let numerosF = [1, 2, 3, 4, 5, 6, 7];
 
 console.log(numerosF.length);
 console.log(numerosF[3]);
-console.log(`La suma de ${numerosF[2]} y ${numerosF[4]} es ` + (numerosF[2] + numerosF[4]));
+console.log(`La suma de ${numerosF[2]} y ${numerosF[4]} es ${numerosF[2] + numerosF[4]}`);
 
 ///////////////////////////////////////////
 //MÉTODOS ARRAY
@@ -22,7 +22,7 @@ console.log(`<p>Casi nos olvidamos!!! Agregamos este articulo: <strong>${articul
 
 //PUSH agrega uno o mas elementos al array a lo último
 articulos.push(prompt("Introduce el articulo"));
-console.log(articulos[articulos.length-1] + "</strong></p>");
+console.log(articulos[articulos.length - 1]);
 
 //SHIFT elimina el primer elemento del array
 articulos.shift();
