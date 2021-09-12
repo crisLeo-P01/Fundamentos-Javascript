@@ -4,15 +4,15 @@
 // }
 
 const creaMensaje = () => {
-  let mensaje = "Mensaje de prueba"; //VARIABLE DEL ÁMBITO LOCAL
+  let mensaje = "Mensaje de prueba"; // VARIABLE DEL ÁMBITO LOCAL
   console.log(mensaje);
 };
 
 creaMensaje();
 
-/////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////
 
-let mensaje2 = "Mensaje de prueba 2"; //VARIABLE DEL ÁMBITO GLOBAL
+let mensaje2 = "Mensaje de prueba 2"; // VARIABLE DEL ÁMBITO GLOBAL
 
 function muestraMensaje() {
   alert(mensaje2);
@@ -20,7 +20,7 @@ function muestraMensaje() {
 
 muestraMensaje();
 
-/////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////
 
 function producto(precio) {
   let costoEnvio = 40;
@@ -45,7 +45,7 @@ let precioProducto02 = producto02(250);
 
 console.log(`El precio del producto es de ${precioProducto02}`);
 
-/////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////
 
 // ESCRIBIR UNA FUNCIÓN DE LA FORMA ACTUAL => FUNCIONES DE FLECHAS
 const saludar = () => console.log("Hola");
@@ -55,7 +55,7 @@ saludar();
 saludar();
 
 const sumar = (num1, num2) =>
-  //NO FUNCIONA
+  // NO FUNCIONA
   num1 + num2;
 
 console.log(sumar(5, 7));
@@ -69,7 +69,7 @@ const sumar2 = (num3, num4) => num3 + num4;
 
 console.log(sumar2(5, 7));
 
-/////////////////////////////////////////
+// ///////////////////////////////////////
 
 const sumar3 = (num5, num6) => {
   if (num5 === 2) {
@@ -80,8 +80,6 @@ const sumar3 = (num5, num6) => {
 };
 
 console.log(sumar3(2, 4));
-/*
-Dentro de la función sumar3 ahy un if que si num5 es igual a 2 ejecute
+/* Dentro de la función sumar3 ahy un if que si num5 es igual a 2 ejecute
 la suma. Al cumplirse, entra en el if y el función finaliza ahí sin
-imprimir el console.log que esta debajo.
-*/
+imprimir el console.log que esta debajo. */
