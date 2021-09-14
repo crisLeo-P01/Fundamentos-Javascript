@@ -14,20 +14,29 @@ creaMensaje();
 
 let mensaje2 = "Mensaje de prueba 2"; // VARIABLE DEL ÁMBITO GLOBAL
 
-function muestraMensaje() {
-  alert(mensaje2);
-}
+// function muestraMensaje() {
+//   console.log(mensaje2);
+// }
+
+const muestraMensaje = () => console.log(mensaje2);
 
 muestraMensaje();
 
 // ///////////////////////////////////////////////////
 
-function producto(precio) {
+// function producto(precio) {
+//   let costoEnvio = 40;
+//   let impuesto = (precio * 21) / 100;
+//   let precioProducto = precio + impuesto + costoEnvio;
+//   return precio + costoEnvio + impuesto;
+// }
+
+const producto = (precio) => {
   let costoEnvio = 40;
   let impuesto = (precio * 21) / 100;
-  return precio + costoEnvio + impuesto;
   let precioProducto = precio + impuesto + costoEnvio;
-}
+  return precio + costoEnvio + impuesto;
+};
 
 let precioProducto = producto(1200);
 
@@ -59,11 +68,10 @@ const sumar = (num1, num2) =>
   num1 + num2;
 
 console.log(sumar(5, 7));
-/*
-Las funciones de flechas al colocarle llaves, las funciones esperas
+
+/* Las funciones de flechas al colocarle llaves, las funciones esperas
 que reciban un return y además esperan recibir más de una línea de
-código. Entonces para que la función funcione hay que sacar las llaves
-*/
+código. Entonces para que la función funcione hay que sacar las llaves */
 
 const sumar2 = (num3, num4) => num3 + num4;
 

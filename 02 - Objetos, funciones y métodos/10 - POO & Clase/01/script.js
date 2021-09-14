@@ -31,18 +31,17 @@ Esto se traduce en nombre del objeto, método.
 Todos los métodos al final llevan unos paréntesis que se conocen como zona de parámetros o argumentos.
 */
 
-let miboton = document.getElementById ("boton1");
-let miboton2 = document.getElementById ("boton2");
-let miboton3 = document.getElementById ("boton3");
+let miboton = document.getElementById("boton1");
+let miboton2 = document.getElementById("boton2");
+let miboton3 = document.getElementById("boton3");
 
-miboton.style.width = "250px"; //propiedad
+miboton.style.width = "250px"; // propiedad
 miboton.style.height = "250px";
-miboton.style.background="red";
+miboton.style.background = "red";
 
-miboton2.style.width = "250px"; //propiedad
+miboton2.style.width = "250px"; // propiedad
 miboton2.style.height = "250px";
 miboton3.style.width = "250px";
 
-
-miboton3.focus (); //método
+miboton3.focus (); // método
 miboton3.value = "Escriba aquí...";
