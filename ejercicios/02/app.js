@@ -53,9 +53,9 @@ do {
     iAutor = prompt("Por favor, introduzca un nombre");
   }
 
-  iAnio = parseInt(prompt("Introduzca el año del libro"));
+  iAnio = parseInt(prompt("Introduzca el año del libro"), 10);
   while (iAnio <= 0 || iAnio > 2021) {
-    iAnio = parseInt(prompt("Por favor, introduzca una fecha válida"));
+    iAnio = parseInt(prompt("Por favor, introduzca una fecha válida"), 10);
   }
 
   iGenero = prompt("introduce el género del libro. Deben ser de genero => Aventuras, terror o fantasía").toLowerCase();
