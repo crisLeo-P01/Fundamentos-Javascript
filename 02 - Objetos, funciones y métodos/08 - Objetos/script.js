@@ -1,6 +1,5 @@
 /* eslint-disable guard-for-in */
-const persona = {
-  // objeto
+const persona = { // objeto
   nombre: "Cristian", // índice: valor;
   edad: 34,
   dni: 31700716,
@@ -12,6 +11,9 @@ console.log(persona.nombre);
 console.log(`Nombre del usuario: ${persona.nombre}`); // console.log('Nombre del usuario: ' + persona.['nombre']);
 console.log(`Edad del usuario: ${persona.edad}`);
 console.log(`Los deportes favoritos del usuario son: ${persona.deportesFavoritos}`);
+
+persona.nacionalidad = 'Argentina'; // Agregamos un nuevo indice con su valor para el objeto persona
+console.log(persona.nacionalidad);
 
 for (const key in persona) {
   console.log(key); // Recorremos los índices del objeto
@@ -30,4 +32,4 @@ de dicha array hay que colocar "of" y de esa forma nos dara todos los valores qu
 contiene el array. */
 
 // IMPRIMIENDO TODO EN UNA SOLA LÍNEA
-console.log(`El nombre es ${persona.nombre}. Su edad es de ${persona.edad} años. Sus deportes favoritos son: ${persona.deportesFavoritos.join(", ")}`);
+console.log(`El nombre es ${persona.nombre} y una nacionalidad ${persona.nacionalidad}. Su edad es de ${persona.edad} años. Sus deportes favoritos son: ${persona.deportesFavoritos.join(", ")}`);
