@@ -8,8 +8,8 @@ console.log(`La palabra ${palabras[2]} tiene ${palabras[2].length} letras`);
 console.log('.from()');
 let palabra = 'Hola Mundo';
 console.log(Array.from(palabra));
-console.log(palabra.split(''));
 
+console.log(palabra.split(''));
 console.log(palabra.split(' '));
 
 // ARRAY SORT()
@@ -47,18 +47,10 @@ console.log(cosas.sort());
 // FOREACH(callback(currentValue, [index])) - ejecuta la función indicada una vez por cada elemento del array.
 console.log('.forEach()');
 const numeros2 = [12, 25, 47, 84, 98];
-numeros2.forEach((numeros2) => console.log(numeros2));
+numeros2.forEach((numerosFor) => console.log(numerosFor));
 
 const numeros3 = [7, 25, 23, 105, 32];
 numeros3.forEach((num3, index) => console.log(`${num3} está en la posición ${index}`));
-
-for (let i = 0; i < numeros2.length; i++) {
-  console.log(numeros2[i]);
-}
-
-for (const n2 in numeros2){
-  console.log(numeros2[n2]);
-};
 
 // .some(callback) - Comprueba si al menos un elemento del array cumple la condición. Devuelve true o false
 console.log('.some()');
@@ -71,20 +63,16 @@ console.log(programming.every((prog) => prog.length > 3));
 console.log('.map()');
 const numeros4 = [12, 25, 47, 84, 98];
 numeros4.map((number) => console.log(number * 2));
-// Esto es igual a:
-for (const number2 of numeros4) {
-  console.log(number2 * 2);
-};
 
 // También crear una nueva ARRAY a base de la ya existente
-const number3 = numeros4.map((number3) => number3 * 2);
+const number3 = numeros4.map((numberMap) => numberMap * 2);
 console.log(number3);
 
 // .filter(callback) - Filtra todos los elementos del array que cumplan la condición y devuelve un nuevo array
 console.log('.filter()');
 const numeros5 = [3, 7, 13, 34, 32, 78, 105, 43];
-const number4 = numeros5.filter((number4) => number4 > 33);
-console.log(number4);
+const numberFilter = numeros5.filter((numberFilter) => numberFilter > 33);
+console.log(numberFilter);
 
 // .reduce(callback) - Reduce todos los elementos del array a un único valor
 console.log('.reduce()');
