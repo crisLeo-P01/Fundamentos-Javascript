@@ -71,7 +71,7 @@ console.log(number3);
 // .filter(callback) - Filtra todos los elementos del array que cumplan la condición y devuelve un nuevo array
 console.log('.filter()');
 const numeros5 = [3, 7, 13, 34, 32, 78, 105, 43];
-const numberFilter = numeros5.filter((numberFilter) => numberFilter > 33);
+const numberFilter = numeros5.filter((numberfilter) => numberfilter > 33);
 console.log(numberFilter);
 
 // .reduce(callback) - Reduce todos los elementos del array a un único valor
