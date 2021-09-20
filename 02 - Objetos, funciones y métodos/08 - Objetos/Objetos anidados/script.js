@@ -21,6 +21,7 @@ const gatoRaza = mascotas.gatos.raza; // De forma de la que se hacia
 
 console.log(gatoRaza);
 
-const { raza } = mascotas.gatos; // Destructuring objects
+const { raza, color } = mascotas.gatos; // Destructuring objects
 
 console.log(raza);
+console.log(color);
