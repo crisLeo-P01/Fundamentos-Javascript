@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Practicando</title>
-</head>
+  </head>
 
-<body>
-
-<script>
-
-    function test() {
+  <body>
+    <script>
+      function test() {
         try {
-            let a = parseInt(prompt("Introduce un número"));
-            let b = parseInt(prompt("Introduce otro número"));
+          let a = parseInt(prompt("Introduce un número"));
+          let b = parseInt(prompt("Introduce otro número"));
 
-            if(isNaN(a) || isNaN(b)) {
-                throw "Haz colocado un número inválido";
-            }
-            alert("El resultado es " + (a+b));
-
+          if (isNaN(a) || isNaN(b)) {
+            throw "Haz colocado un número inválido";
+          }
+          alert("El resultado es " + (a + b));
+        } catch (error) {
+          alert("Error: " + error);
         }
+      }
+    </script>
 
-        catch (error) {
-            alert("Error: " + error);
-        }
-    }
-
-</script>
-
-<button type="button" onclick="test()">OK</button>
-
-</body>
-
+    <button type="button" onclick="test()">OK</button>
+  </body>
 </html>
