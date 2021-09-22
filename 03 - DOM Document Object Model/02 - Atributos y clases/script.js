@@ -44,4 +44,4 @@ console.log(title.innerHTML);
 // .textContent - Toma el elemento de forma plana.
 console.log(title.textContent);
 
-console.log(name.value)
+console.log(name.value);
