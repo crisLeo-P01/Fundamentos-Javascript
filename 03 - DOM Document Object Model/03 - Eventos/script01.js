@@ -10,47 +10,46 @@
 // EVENTO CLICK
 const btn = document.getElementById('btn');
 btn.addEventListener('click', () => {
-    console.log('click');
+  console.log('click');
 });
 
-////////////////////////////////////////////
+// //////////////////////////////////////////
 
 // EVENTO DOBLE CLICK
 const btn2 = document.getElementById('btn2');
 btn2.addEventListener('dblclick', () => {
-    console.log('DOBLE CLICK');
+  console.log('DOBLE CLICK');
 });
 
 // EVENTO MOUSEENTER
 const btn3 = document.getElementById('btn3');
 btn3.addEventListener('mouseenter', () => {
-    btn3.classList.add('violet');
-    console.log('MOUSEENTER');
+  btn3.classList.add('violet');
+  console.log('MOUSEENTER');
 });
 
 // EVENTO MOUSELEAVE
 btn3.addEventListener('mouseleave', () => {
-    btn3.classList.replace('violet', 'red');
-    console.log('MOUSELEAVE');
+  btn3.classList.replace('violet', 'red');
+  console.log('MOUSELEAVE');
 });
 
-
-//EVENTO MOUSEDOWN
+// EVENTO MOUSEDOWN
 const btn5 = document.getElementById('btn5');
 btn5.addEventListener('mousedown', () => {
-    console.log('MOUSEDOWN');
+  console.log('MOUSEDOWN');
 });
 
-//EVENTO MOUSEUP
+// EVENTO MOUSEUP
 const btn6 = document.getElementById('btn6');
 btn6.addEventListener('mouseup', () => {
-    console.log('MOUSEUP');
+  console.log('MOUSEUP');
 });
 
-//EVENTO MOUSEMOVE
+// EVENTO MOUSEMOVE
 const btn7 = document.getElementById('btn7');
 btn7.addEventListener('mousemove', () => {
-    console.log('MOUSEMOVE');
+  console.log('MOUSEMOVE');
 });
 
 // EVENTOS DE TECLADO
@@ -60,36 +59,23 @@ btn7.addEventListener('mousemove', () => {
 
 const input = document.getElementById('input');
 input.addEventListener('keydown', () => {
-    console.log('Es presionado una tecla');
+  console.log('Es presionado una tecla');
 });
 
 const input2 = document.getElementById('input2');
 
 input2.addEventListener('keyup', () => {
-    console.log('HAS SOLTADO UNA TECLA');
+  console.log('HAS SOLTADO UNA TECLA');
 });
 
 const input3 = document.getElementById('input3');
 input3.addEventListener('keypress', () => {
-    console.log('ESTAS PRESIONANDO UNA TECLA');
+  console.log('ESTAS PRESIONANDO UNA TECLA');
 });
 
-////////////////////////////////////////////////////
+// //////////////////////////////////////////////////
 
 const input4 = document.getElementById('input4');
 input4.addEventListener("keydown", (e) => {
-    console.log(e.key);
-});
-
-////////////////////////////////////////////////////
-
-const gallery = document.getElementById('gallery');
-gallery.addEventListener('click', (e) => {
-    console.log(e.target.textContent);
-});
-
-const form = document.getElementById('form');
-form.addEventListener('submit', (ev) => {
-    ev.preventDefault();
-    console.log('El formulario se ha enviado');
+  console.log(e.key);
 });

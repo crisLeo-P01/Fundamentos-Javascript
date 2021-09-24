@@ -2,7 +2,7 @@
 const title = document.getElementById('title');
 console.log(title);
 // Modificando elementos del HTML de forma dinámica
-title.textContent = 'Estudiando el DOM'
+title.textContent = 'Estudiando el DOM';
 
 // document.querySelector('selectorCSS') - Accede al primer elemento que coincida con el selectot CSS
 const paragraph = document.querySelector('.paragraph');
@@ -10,7 +10,7 @@ console.log(paragraph);
 
 // Acceder a un elemento que esta dentro de otro
 const span = document.querySelector('.paragraph').querySelector('span');
-console.log(span.textContent)
+console.log(span.textContent);
 
 const paragraph2 = document.querySelector('.paragraph:nth-child(2)');
 console.log(paragraph2);
