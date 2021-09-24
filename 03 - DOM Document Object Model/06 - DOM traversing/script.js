@@ -1,4 +1,4 @@
-//Recorrer el DOM (DOM Traversing)
+// Recorrer el DOM (DOM Traversing)
 
 /*
 Padre - parent (Nodo del que desciende)
@@ -30,11 +30,11 @@ const parent = document.getElementById('parent');
 
 console.log(parent.parentElement);
 
-console.log(parent.childNodes);//Los más habitual es usar .children
+console.log(parent.childNodes); // Los más habitual es usar .children
 
 console.log(parent.children);
 
-console.log(parent.children[2]);//Para seleccionar un elemento en específico
+console.log(parent.children[2]); // Para seleccionar un elemento en específico
 
 console.log(parent.firstElementChild);
 
@@ -43,5 +43,3 @@ console.log(parent.lastElementChild);
 console.log(parent.parentElement.previousElementSibling);
 
 console.log(parent.parentElement.nextElementSibling);
-
-

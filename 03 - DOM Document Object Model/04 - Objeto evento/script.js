@@ -14,7 +14,7 @@ button.addEventListener('click', (e) => {
 
 const gallery = document.getElementById('gallery');
 gallery.addEventListener('click', (e) => {
-  console.log(e.target.textContent);
+  e.target.classList.add('red');
 });
 
 form.addEventListener('submit', (ev) => {
