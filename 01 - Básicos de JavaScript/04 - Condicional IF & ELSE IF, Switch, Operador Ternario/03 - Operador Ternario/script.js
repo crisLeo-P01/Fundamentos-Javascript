@@ -14,10 +14,10 @@ let num2 = 8;
 // CON MÚLTIPLES SENTENCIAS
 
 (num2 % 2 === 0) ? 
-    (
-        console.log (`${num2} es par`),
+  (
+    console.log (`${num2} es par`),
+    console.log (`${num2} es par 2`)
+  ) : (
+        console.log (`${num2} es impar`),
         console.log (`${num2} es par 2`)
-    ) : (
-            console.log (`${num2} es impar`),
-            console.log (`${num2} es par 2`)
-        )
+      )
