@@ -6,11 +6,11 @@ const button = document.getElementById('button');
   confirm()
 */
 
-addEventListener('click', (e) => {
+window.addEventListener('click', (e) => {
   console.log(e);
 });
 
-addEventListener('load', (e) => {
+window.addEventListener('load', (e) => {
   console.log(e);
 });
 
