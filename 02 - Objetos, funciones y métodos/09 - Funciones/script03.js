@@ -1,4 +1,4 @@
-let repetir = "si";
+let repetir = 'si';
 
 // function suma(num1, num2) {
 //   alert("La suma es: " + (num1 + num2));
@@ -30,17 +30,17 @@ do {
   const operacion1 = parseInt(prompt("Introduce el primer n°"), 10);
   const operacion2 = parseInt(prompt("Introduce el segundo n°"), 10);
 
-  if (operacion === "suma") {
+  if (operacion === 'suma') {
     suma(operacion1, operacion2);
-  } else if (operacion === "resta") {
+  } else if (operacion === 'resta') {
     resta(operacion1, operacion2);
-  } else if (operacion === "division") {
+  } else if (operacion === 'division') {
     division(operacion1, operacion2);
-  } else if (operacion === "multiplicar") {
+  } else if (operacion === 'multiplicar') {
     multiplicar(operacion1, operacion2);
   } else {
-    console.log("Lo siento. La operación no esta contemplada.");
+    console.log('Lo siento. La operación no esta contemplada.');
   }
 
-  repetir = prompt("¿Desea realizar otra operación?").toLowerCase();
-} while (repetir === "si");
+  repetir = prompt('¿Desea realizar otra operación?').toLowerCase();
+} while (repetir === 'si');
