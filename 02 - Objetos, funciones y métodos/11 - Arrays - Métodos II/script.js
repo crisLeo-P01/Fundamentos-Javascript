@@ -1,4 +1,4 @@
-let palabras = ['Hola', 'estamos', 'trabajando', 'con', 'SublimeText3'];
+const palabras = ['Hola', 'estamos', 'trabajando', 'con', 'SublimeText3'];
 
 console.log(`${palabras[1]} ${palabras[2]}`);
 console.log(`La palabra ${palabras[2]} tiene ${palabras[2].length} letras`);
@@ -6,7 +6,7 @@ console.log(`La palabra ${palabras[2]} tiene ${palabras[2].length} letras`);
 // ARRAY FROM()
 // .form(iterable) - Convierte en array el elemento iterable.
 console.log('.from()');
-let palabra = 'Hola Mundo';
+const palabra = 'Hola Mundo';
 console.log(Array.from(palabra));
 
 console.log(palabra.split(''));
@@ -16,13 +16,13 @@ console.log(palabra.split(' '));
 /* .sort([callback]) - Ordena los elementos de un array alfabéticamente(valor Unicode),si le pasamos un
 callback los ordena en función del algoritmo que le pasemos. */
 console.log('.sort()');
-let letras = ['c', 'h', 'f', 't', 'z', 'a'];
+const letras = ['c', 'h', 'f', 't', 'z', 'a'];
 console.log(letras);
 console.log(letras.sort());
 
 console.log('///////////////////////////');
 
-let numeros = [7, 3, 10, 1, 30, 700, 300];
+const numeros = [7, 3, 10, 1, 30, 700, 300];
 console.log(numeros);
 console.log(numeros.sort());
 // Tener en cuenta que 10 viene antes que 2 porque '1'0 viene antes que '2' según la posición del valor Unicode.
@@ -40,7 +40,7 @@ function mayorMenor(a, b) {
   if(b == a) return 0;
 } */
 
-let cosas = ['word', 'Word', '1 Word', '2 Words'];
+const cosas = ['word', 'Word', '1 Word', '2 Words'];
 console.log(cosas.sort());
 // En Unicode, los números vienen antes que las letras mayúsculas y estas vienen antes que las letras minúsculas.
 
