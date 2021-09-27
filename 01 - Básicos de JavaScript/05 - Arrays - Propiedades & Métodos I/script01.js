@@ -21,6 +21,7 @@ articulos.unshift('Balón');
 console.log(`<p>Casi nos olvidamos!!! Agregamos este articulo: <strong>${articulos[0]}</strong></p>`);
 
 // PUSH agrega uno o mas elementos al array a lo último
+// eslint-disable-next-line no-alert
 articulos.push(prompt('Introduce el articulo'));
 console.log(articulos[articulos.length - 1]);
 
