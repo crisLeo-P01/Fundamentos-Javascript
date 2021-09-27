@@ -12,8 +12,8 @@ const addNumeros = [1, 2, 3];
 agregarNumeros(...addNumeros);
 
 // Añadir un array a otro array/////////////////////////////////////////
-let users = ['Javier', 'David', 'Rosa', 'Juan', 'Mercedes'];
-let newUsers = ['Marta', 'Jaime', 'Laura'];
+const users = ['Javier', 'David', 'Rosa', 'Juan', 'Mercedes'];
+const newUsers = ['Marta', 'Jaime', 'Laura'];
 // users.push(newUsers[0], newUsers[1], newUsers[2]);
 // Agregando usuarios al array users de una forma muy complicada si se trata de miles de usuarios.
 // console.log(users);
@@ -22,17 +22,17 @@ users.push(...newUsers);
 console.log(users);
 
 // Copiar Arrays////////////////////////////////////////////////////////
-let arr1 = [1, 2, 3];
-let arr2 = [...arr1];
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
 console.log(arr2);
 
 // Concatenar Arrays////////////////////////////////////////////////////
-let arr3 = [7, 13, 18];
-let arr4 = [32, 43, 78];
-let arrConcatenar = arr3.concat(arr4);
+const arr3 = [7, 13, 18];
+const arr4 = [32, 43, 78];
+const arrConcatenar = arr3.concat(arr4);
 console.log(arrConcatenar);
 // Otra forma sería...
-let arrConcatenar02 = [...arr3, ...arr4];
+const arrConcatenar02 = [...arr3, ...arr4];
 console.log(arrConcatenar02);
 
 // Enviar un número indefinido de argumentos a una función (parámetros REST)////
