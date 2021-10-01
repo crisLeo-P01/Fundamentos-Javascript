@@ -2,29 +2,23 @@ const form = document.getElementById('form');
 const characters = document.getElementById('characters');
 const table = document.getElementById('table');
 
-// Esto es cuando llamamos a la función y presionamos en el button GET DATA
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  getData(characters.children[characters.selectedIndex].value);
-  // Con esta línea tomamos el value del selected seleccionado. De esta forma tomamos el select con todos sus nodos
-});
-
-const getData = (id) => {
+const getData = (id) => { // es toda la información que tenemos en la base de datos y lo buscamos por el id.
   const xhr = new XMLHttpRequest();
 
   if (id === undefined) { // Tenemos que preguntar si ID existe para ver si estamos cargando por primera vez la página o no
     xhr.open('GET', 'marvel.php');
-    /* Si el ID es undefined, significa que no estamos haciendo una solicitud desde el formulario, sino que estamos cargando la página por primera vez */
+    /* Si el ID es undefined, significa que no estamos haciendo una solicitud desde el formulario, sino que estamos cargando
+    la página por primera vez. */
     // Una vez que lo tenemos, tenemos que escuchar la respuesta para saber que los datos ya lo tenemos
     xhr.addEventListener('load', (data) => {
       const dataJSON = JSON.parse(data.target.response); // Convertimos ese dato en formato JSON
-      console.log(dataJSON);
 
       // Creamos el fragmento de código que a cada vuelta de bucle, rellene nuestro select
       const fragment = document.createDocumentFragment();
       for (const heroes of dataJSON) {
-        const option = document.createElement('OPTION');
-        option.setAttribute('value', heroes.ID);
+        const option = document.createElement('OPTION'); // creamos un option para meterlo en el select
+        option.setAttribute('value', heroes.ID); // Necesitamos asignar un valor a ese option
+        // El value se lo tenemos que asignar a cada vuelta de bucle
         /* El ID está en mayúsculas ya que en la BD está así.
         Establece un atributo el cual es añadido con el nombre y valor indicado */
         option.textContent = heroes.Name;
@@ -41,7 +35,6 @@ const getData = (id) => {
 
     xhr.addEventListener('load', (data) => {
       const dataJSON = JSON.parse(data.target.response);
-      console.log(dataJSON);
 
       const fragment = document.createDocumentFragment();
 
@@ -83,3 +76,10 @@ const getData = (id) => {
 };
 
 getData();
+
+// Esto es cuando llamamos a la función y presionamos en el button GET DATA
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  getData(characters.children[characters.selectedIndex].value);
+  // Con esta línea tomamos el value del selected seleccionado. De esta forma tomamos el select con todos sus nodos
+});
