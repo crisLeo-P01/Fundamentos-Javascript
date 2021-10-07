@@ -1,4 +1,3 @@
-
 /*
   Fetch API
   Para hacer peticiones POST, fetch admite un segundo parámetro.
@@ -11,35 +10,32 @@
     }
   })
 
-   console.log(newPost)
-   console.log(JSON.stringify(newPost))
+  console.log(newPost)
+  console.log(JSON.stringify(newPost))
 */
 
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
-    const newPost = {
-        title: 'A new post',
-        body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        userId: 1
-    };
+  const newPost = {
+    title: 'A new post',
+    body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    userId: 1
+  };
 
-    // Petición fetch
-    /*
-    * Al igual que no podemos recibir un objeto, no podemos mandar un objeto,
-    * entonces lo que hay que hacer es convertir ese objeto en formato JSON
-    * para que la API lo pueda interpretar
-    */
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify(newPost),
-        /*
-        * NO podemos enviar un objeto, entonces tenemos que convertirlo en formato JSON para
-        * poder enviarlo y la API lo pueda interpretar*/
-        headers: { //Las cabeceras son un objeto
-            "Content-type": "application/json"
-        }
-    })
-        .then(res => res.json())
-        .then(data => console.log(data))
+  // Petición fetch
+  /* Al igual que no podemos recibir un objeto, no podemos mandar un objeto,
+  entonces lo que hay que hacer es convertir ese objeto en formato JSON
+  para que la API lo pueda interpretar */
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify(newPost),
+    /* NO podemos enviar un objeto, entonces tenemos que convertirlo en formato JSON para
+    poder enviarlo y la API lo pueda interpretar */
+    headers: { //Las cabeceras son un objeto
+      "Content-type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(data => console.log(data))
 });
