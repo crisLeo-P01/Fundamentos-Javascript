@@ -25,12 +25,12 @@ const emails = [
   },
 ];
 
+// PROMESA
+// Así es como se declara una promesa. Se construye como un nuevo objeto.
+// Dentro del new Promise colocamos los callback que lleva el Promise de por si.
+// Lleva un RESOLVE, el cual se va a ejecutar cuando t/ vaya bien y REJECT se ejecutara cuando algo vaya mal
 const getUser = (id) => {
   const user = users.find(user => user.id === id);
-  // PROMESA
-  // Así es como se declara una promesa. Se construye como un nuevo objeto.
-  // Dentro del new Promise colocamos los callback que lleva el Promise de por si.
-  // Lleva un RESOLVE, el cual se va a ejecutar cuando t/ vaya bien y REJECT se ejecutara cuando algo vaya mal
   const promise = new Promise((resolve, reject) => {
     if (!user) reject(`Doesn't exist an user with id ${id}`);
     else resolve(user);
