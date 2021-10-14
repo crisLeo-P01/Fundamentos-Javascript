@@ -55,9 +55,9 @@ const getEmail = (user) => {
 // Lo que hace el getUser internamente
 
 getUser(3)
-  .then(user => getEmail(user))
-  .then(res => console.log(res))
-  .catch(err => console.log(err));
+  .then((user) => getEmail(user))
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
 
 // Una forma abreviada para devolver la promesa
 getUser(2)
