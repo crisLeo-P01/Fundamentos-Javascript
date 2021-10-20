@@ -19,7 +19,7 @@ const button = document.getElementById('button');
 button.addEventListener('click', () => {
   const newPost = {
     title: 'A new post',
-    body: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     userId: 1,
   };
 
@@ -30,8 +30,6 @@ button.addEventListener('click', () => {
   fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     body: JSON.stringify(newPost),
-    /* NO podemos enviar un objeto, entonces tenemos que convertirlo en formato JSON para
-    poder enviarlo y la API lo pueda interpretar */
     headers: { // Las cabeceras son un objeto
       'Content-type': 'application/json',
     },

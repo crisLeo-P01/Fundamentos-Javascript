@@ -10,17 +10,17 @@ const buttonImg = document.getElementById('button-img');
 const buttonPDF = document.getElementById('button-pdf');
 
 buttonImg.addEventListener('click', () => {
-  fetch('lupe.jpg') //Petición a un recurso
-    .then(res => res.blob())
-    .then(img => {
+  fetch('lupe.jpg') // Petición a un recurso
+    .then((res) => res.blob())
+    .then((img) => {
       document.getElementById('img').src = URL.createObjectURL(img);
-    })
+    });
 });
 
 buttonPDF.addEventListener('click', () => {
   fetch('comprobante.pdf')
-    .then(res => res.blob())
-    .then(pdf => {
+    .then((res) => res.blob())
+    .then((pdf) => {
       document.getElementById('pdf').href = URL.createObjectURL(pdf);
-    })
+    });
 });
