@@ -1,9 +1,13 @@
 /*
-    Fetch API
-        blob(): Binary Long OBject
-        Si ponemos la ruta hacia el archivo podemos leer ese archivo y renderizarlo en pantalla
-        URL: Con el objeto URL usando el método createObjectURL(archivo) podemos crear una ruta válida para ver ese archivo
-        https://developer.mozilla.org/es/docs/Web/API/URL
+  Fetch API
+    blob(): Binary Long OBject
+    Los Blobs representan datos que no necesariamente se encuentran en un formato nativo de JavaScript.
+    La interfaz File se encuentra basada en un Blob, heredando y expendiendo la funcionalidad de un
+    Blob para soportar archivos en el sistema del usuario.
+
+    Si ponemos la ruta hacia el archivo podemos leer ese archivo y renderizarlo en pantalla
+    URL: Con el objeto URL usando el método createObjectURL(archivo) podemos crear una ruta válida para ver ese archivo
+    https://developer.mozilla.org/es/docs/Web/API/URL
 */
 
 const buttonImg = document.getElementById('button-img');
