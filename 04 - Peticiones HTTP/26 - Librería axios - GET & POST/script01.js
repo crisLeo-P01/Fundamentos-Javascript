@@ -1,14 +1,11 @@
-/*
-Librería axios
-Axios es una librería basado en promesas para el cliente
-y el servidor
-https://desarrolloweb.com/articulos/axios-ajax-cliente-http-javascript.html
- */
+/* Librería axios
+Axios es una librería basado en promesas para el cliente y el servidor
+https://desarrolloweb.com/articulos/axios-ajax-cliente-http-javascript.html */
 
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
-  axios ({
+  axios ({ // axios es un método y recibe un objeto 
     method: 'GET',
     url: 'https://jsonplaceholder.typicode.com/users',
   }).then((res) => {
