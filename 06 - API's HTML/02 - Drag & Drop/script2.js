@@ -31,8 +31,8 @@ finishedTasks.addEventListener('drop', (e) => {
     element.classList.remove('active')
     /*
     Cuando eliminamos un hijo de un contenedor, el método removeChild devuelve
-    el elemento que hemos eliminado. Es decir, quita el elemento de pendingTasks
-    y agregalo al elemento finishedTasks.
+    el elemento que hemos eliminado. Es decir, quita el elemento de tareas
+    pendientes => pendingTasks y agregalo a tareas terminadas => finishedTasks.
     */
     finishedTasks.appendChild(pendingTasks.removeChild(element))
 })
