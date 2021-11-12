@@ -28,3 +28,5 @@ form.addEventListener('submit', (e) => {
 keys.addEventListener('change', () => {
   document.getElementById('infoValue').textContent = sessionStorage.getItem(keys[keys.selectedIndex].textContent);
 });
+
+// selectedIndex => Nos da un valor según en la posición que hemos seleccionado.
