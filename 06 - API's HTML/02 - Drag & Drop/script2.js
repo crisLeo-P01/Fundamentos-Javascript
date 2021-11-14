@@ -7,6 +7,7 @@ la etiqueta draggable en true => draggable= "true"
 // dataTransfer
 // setData: Establece la información que queremos compartir
 // getData: Establece la información que queremos obtener
+
 pendingTasks.addEventListener('dragstart', (e) => {
   e.dataTransfer.setData('text/plain', e.target.id);
 });

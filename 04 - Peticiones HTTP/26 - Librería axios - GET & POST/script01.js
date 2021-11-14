@@ -5,7 +5,7 @@ https://desarrolloweb.com/articulos/axios-ajax-cliente-http-javascript.html */
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
-  axios ({ // axios es un método y recibe un objeto 
+  axios ({ // axios es un método y recibe un objeto
     method: 'GET',
     url: 'https://jsonplaceholder.typicode.com/users',
   }).then((res) => {
