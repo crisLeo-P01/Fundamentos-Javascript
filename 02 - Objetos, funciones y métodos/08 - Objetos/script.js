@@ -1,10 +1,10 @@
 /* eslint-disable guard-for-in */
 const persona = { // objeto
-  nombre: "Cristian", // índice: valor;
+  nombre: 'Cristian', // índice: valor;
   edad: 34,
   dni: 31700716,
-  sexo: "Masculino",
-  deportesFavoritos: ["Fútbol", "Fórmula 1", "Tennis", "NBA", "UFC"],
+  sexo: 'Masculino',
+  deportesFavoritos: ['Fútbol', 'Fórmula 1', 'Tennis', 'NBA', 'UFC'],
 };
 
 console.log(persona.nombre);

@@ -1,7 +1,7 @@
 const mascotas = {
   perros: {
-    raza: "Doberman",
-    color: "Negro",
+    raza: 'Doberman',
+    color: 'Negro',
   },
   gatos: {
     raza: 'Egito',
