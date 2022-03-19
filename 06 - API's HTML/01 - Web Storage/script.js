@@ -1,5 +1,5 @@
 /*
-API webSotorage
+API webStorage
 Los mecanismos en el almacenamiento web son las siguientes:
   -sessionStorage -> mantiene un área de almacenamiento separada para cada origen
   que está disponible mientras dure la sesión de la página (mientras el navegador
@@ -9,7 +9,7 @@ Los mecanismos en el almacenamiento web son las siguientes:
   cierre y se reabra.
 
   Ambas funciones con clave: valor y tienen dos métodos fundamentales; setItem() para
-  asignar una clave:valor y getItem() que recive como parámetro la clave de la que
+  asignar una clave:valor y getItem() que recibe como parámetro la clave de la que
   queremos obtener el valor.
 */
 

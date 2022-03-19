@@ -12,7 +12,7 @@ console.log(`Nombre del usuario: ${persona.nombre}`); // console.log('Nombre del
 console.log(`Edad del usuario: ${persona.edad}`);
 console.log(`Los deportes favoritos del usuario son: ${persona.deportesFavoritos}`);
 
-persona.nacionalidad = 'Argentina'; // Agregamos un nuevo indice con su valor para el objeto persona
+persona.nacionalidad = 'Argentina'; // Agregamos un nuevo índice con su valor para el objeto persona
 console.log(persona.nacionalidad);
 
 for (const key in persona) {
@@ -24,7 +24,7 @@ for (const value in persona) {
 }
 
 for (const depFav of persona.deportesFavoritos) {
-  console.log(depFav); // Recorremos los valores de dichos indices
+  console.log(depFav); // Recorremos los valores de dichos índices
 }
 
 /* Si ponemos in en el bucle for nos recorre el índice del array. Para mostrar las claves

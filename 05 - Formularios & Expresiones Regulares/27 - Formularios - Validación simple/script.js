@@ -13,11 +13,6 @@ const formInValid = { // Cuando la página esta cargada todos los items del form
   terms: false,
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Es para prevenir que el formulario sea enviado sin ningún dato o sin completar algún campo
-  validateForm(); // Función que valide
-});
-
 name.addEventListener('change', (e) => { // El change hace que detecte cualquier cambio dentro del campo
   if (e.target.value.trim().length > 0) formInValid.name = true; // trim() es para que no haya espacios en blanco
 });
@@ -45,3 +40,8 @@ const validateForm = () => {
   if (valid === -1) form.submit(); // En caso que sea true con -1, enviará el formulario.
   else alert('Form Invalid');
 };
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // Es para prevenir que el formulario sea enviado sin ningún dato o sin completar algún campo
+  validateForm(); // Función que valide
+});

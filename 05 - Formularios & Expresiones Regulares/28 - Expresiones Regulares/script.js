@@ -17,7 +17,8 @@
         -Mezcla entre rangos y listas:
             Podemos unir los dos anteriores en una sola expresión. [0-5ou] Serían números del 0 al 5, la letra "o" y la letra "u"
         -Cadenas completas:
-            Para establecer una cadena completa debe ir entre paréntesis, si queremos más palabras irán separadas por un pipe. (lorem|amet) es válida la palabra "lorem" y la palabra "amet"
+            Para establecer una cadena completa debe ir entre paréntesis, si queremos más palabras
+                irán separadas por un pipe. (lorem|amet) es válida la palabra "lorem" y la palabra "amet"
     Delimitadores:
         ^ Antes de este símbolo no puede haber nada
         $ Después de este símbolo no puede haber nada
@@ -35,7 +36,8 @@
         A-[0-9]+
 
     Caracteres:
-        \s: Coincide con un carácter de espacio, entre ellos incluidos espacio, tab, salto de página, salto de linea y retorno de carro. ^[a-zA-Z]+\s[a-zA-Z]+$
+        \s: Coincide con un carácter de espacio, entre ellos incluidos espacio, tab,
+            salto de página, salto de linea y retorno de carro. ^[a-zA-Z]+\s[a-zA-Z]+$
         \S: Coincide con todo menos caracteres de espacio ^\S{5}$
         \d: Coincide con un carácter de número. Equivalente a [0-9] ^\d{5}$
         \D: Coincide con cualquier carácter no numérico. Equivalente a [^0-9] ^\D{5}$

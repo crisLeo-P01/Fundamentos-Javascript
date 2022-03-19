@@ -13,7 +13,7 @@ console.log(palabra.split(''));
 console.log(palabra.split(' '));
 
 // ARRAY SORT()
-/* .sort([callback]) - Ordena los elementos de un array alfabéticamente(valor Unicode),si le pasamos un
+/* .sort([callback]) - Ordena los elementos de un array alfabéticamente(valor Unicode), si le pasamos un
 callback los ordena en función del algoritmo que le pasemos. */
 console.log('.sort()');
 const letras = ['c', 'h', 'f', 't', 'z', 'a'];
