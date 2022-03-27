@@ -4,11 +4,11 @@
   También provee un método global fetch() que proporciona una forma fácil y lógica de obtener recursos de forma asíncrona por la red.
   Está basado en promesas, por lo cual tiene un response y un reject internos.
   Response tiene varios métodos
-  - array​Buffer(): Archivos binarios en bruto (mp3, pdf, jpg, etc). Se utiliza cuando se necesita manipular el contenido del archivo.
+  - arrayBuffer(): Archivos binarios en bruto (mp3, pdf, jpg, etc). Se utiliza cuando se necesita manipular el contenido del archivo.
   - blob(): Archivos binarios en bruto (mp3, pdf, jpg, etc).Se utiliza cuando no se necesita manipular el contenido y se va a
   trabajar con el archivo directamente
   - clone(): crea un clon de un objeto de respuesta, idéntico en todos los sentidos, pero almacenado en una variable diferente.
-  - form​Data(): Se utiliza para leer los objetos formData
+  - formData(): Se utiliza para leer los objetos formData
   - json(): Convierte los archivos json en un objeto de JavaScript
   - text(): Se utiliza cuando queremos leer un archivo de texto. Siempre se codifica en UTF-8
 
