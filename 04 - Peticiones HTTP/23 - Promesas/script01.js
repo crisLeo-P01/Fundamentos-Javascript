@@ -25,7 +25,7 @@ const emails = [
   },
 ];
 
-// PROMESA
+// PROMESAS
 // Así es como se declara una promesa. Se construye como un nuevo objeto.
 // Dentro del new Promise colocamos los callback que lleva el Promise de por si.
 // Lleva un RESOLVE, el cual se va a ejecutar cuando t/ vaya bien y REJECT se ejecutara cuando algo vaya mal
