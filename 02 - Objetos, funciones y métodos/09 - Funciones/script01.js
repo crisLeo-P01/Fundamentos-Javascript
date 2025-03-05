@@ -1,17 +1,24 @@
-// function EscribeNombre (nombre) {
-//     document.write(nombre);
-// }
+function escribeNombre(nombre) {
+    console.log(nombre);
+}
 
-const escribeNombre = (nombre) => {
-  document.write(nombre);
+// Arrow Function
+const escribeApellido = (apellido) => {
+    console.log(apellido);
 };
-escribeNombre(prompt('Introduce un nombre'));
 
-// function escribeEdad(edad) {
-//     document.write(edad);
-// }
+escribeNombre('Cristian');
+escribeApellido('Paiva')
 
-const escribeEdad = (edad) => {
-  document.write(edad);
+
+function escribeEdad(edad) {
+    console.log(edad);
+}
+
+// Arrow Function
+const escribeSexo = (sexo) => {
+    console.log(sexo);
 };
-escribeEdad(parseInt(prompt("Ingresa tu edad"), 10));
+
+escribeEdad(25);
+escribeSexo('Masculino');
