@@ -32,9 +32,9 @@ golpe y de esa forma, ahorramos muchísimos recursos por parte del navegador */
 const fragment01 = document.createDocumentFragment();
 
 for (const day01 of days) {
-  const itemList2 = document.createElement('LI');
-  itemList.textContent = day01;
-  fragment01.appendChild(itemList2);
+    const itemList2 = document.createElement('LI');
+    itemList2.textContent = day01;
+    fragment01.appendChild(itemList2);
 }
 
 daysList.appendChild(fragment01);
@@ -44,10 +44,10 @@ daysList.appendChild(fragment01);
 const fragment02 = document.createDocumentFragment();
 
 for (const day02 of days) {
-  const selectItem = document.createElement('OPTION');
-  selectItem.setAttribute('value', day02.toLowerCase());
-  selectItem.textContent = day02;
-  fragment02.appendChild(selectItem);
+    const selectItem = document.createElement('OPTION');
+    selectItem.setAttribute('value', day02.toLowerCase());
+    selectItem.textContent = day02;
+    fragment02.appendChild(selectItem);
 }
 
 selectDays.appendChild(fragment02);

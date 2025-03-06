@@ -37,9 +37,9 @@ title.classList.remove('title');
 
 // classList.contains - comprueba si contiene la clase que le especificamos.
 if (title.classList.contains('title')) {
-  console.log('Title tiene la clase title');
+    console.log('Title tiene la clase title');
 } else {
-  console.log('Title NO tiene la clase title');
+    console.log('Title NO tiene la clase title');
 }
 
 title.classList.replace('red-title', 'green-title');

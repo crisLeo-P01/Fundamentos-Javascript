@@ -1,26 +1,10 @@
 let repetir = 'si';
 
-// function suma(num1, num2) {
-//   alert("La suma es: " + (num1 + num2));
-// }
-
 const suma = (num1, num2) => console.log(`La suma es: ${num1 + num2}`);
-
-// function resta(num1, num2) {
-//   alert("La resta es: " + (num1 - num2));
-// }
 
 const resta = (num1, num2) => console.log(`La resta es: ${num1 - num2}`);
 
-// function division(num1, num2) {
-//   alert("La division es: " + (num1 / num2));
-// }
-
 const division = (num1, num2) => console.log(`La división es: ${num1 / num2}`);
-
-// function multiplicar(num1, num2) {
-//   alert("La multiplicacion es: " + (num1 * num2));
-// }
 
 const multiplicar = (num1, num2) => console.log(`La multiplicación es: ${num1 * num2}`);
 
